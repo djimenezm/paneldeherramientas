@@ -160,6 +160,9 @@ export default function RecursosParaAutonomosPage() {
               <Link href="/herramientas-para-freelancers" className="tool-link">
                 Ver recursos para freelancers
               </Link>
+              <Link href="/mejores-herramientas-para-mantenimiento-web" className="tool-link">
+                Ver herramientas para mantenimiento
+              </Link>
             </div>
           </div>
 
@@ -309,6 +312,9 @@ export default function RecursosParaAutonomosPage() {
           <div className="guide-cta">
             <Link href="/#herramientas" className="tool-link">
               Volver al directorio
+            </Link>
+            <Link href="/mejores-herramientas-para-mantenimiento-web" className="tool-link">
+              Ver herramientas para mantenimiento
             </Link>
           </div>
         </div>
