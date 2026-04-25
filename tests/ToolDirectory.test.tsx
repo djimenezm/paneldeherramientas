@@ -1,4 +1,5 @@
 import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import ToolDirectory from '@/components/ToolDirectory';
 
 describe('ToolDirectory', () => {
@@ -10,6 +11,17 @@ describe('ToolDirectory', () => {
     expect(screen.getByText('Mantenimiento Web Mensual')).toBeInTheDocument();
     expect(screen.getByText('Cuanto Cobrar Landing Page')).toBeInTheDocument();
     expect(screen.getAllByText('Activa')).toHaveLength(4);
-    expect(screen.queryByText('Disponible muy pronto')).not.toBeInTheDocument();
+  });
+
+  it('filters tools by search term', async () => {
+    const user = userEvent.setup();
+
+    render(<ToolDirectory />);
+
+    await user.type(screen.getByLabelText('Buscar herramienta'), 'mantenimiento');
+
+    expect(screen.getByText('Mantenimiento Web Mensual')).toBeInTheDocument();
+    expect(screen.queryByText('Cuanto Facturar')).not.toBeInTheDocument();
+    expect(screen.getByText('Mostrando 1 herramienta.')).toBeInTheDocument();
   });
 });

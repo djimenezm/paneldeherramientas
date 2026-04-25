@@ -1,4 +1,5 @@
 import Script from 'next/script';
+import DecisionGuide from '@/components/DecisionGuide';
 import FAQ, { faqItems } from '@/components/FAQ';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
@@ -133,40 +134,7 @@ export default function HomePage() {
 
       <ToolDirectory />
 
-      <section className="section alt" id="como-funciona">
-        <div className="container conversion-grid">
-          <div className="conversion-copy">
-            <span className="eyebrow">Como usar el panel</span>
-            <h2>Encuentra primero la necesidad, luego la herramienta</h2>
-            <p>
-              El panel no intenta mezclarlo todo en una sola app. La idea es justo la contraria:
-              que puedas abrir una herramienta pequena y enfocada para cada decision importante.
-            </p>
-            <p>
-              Si primero necesitas una referencia mensual, empieza por facturacion. Si ya vendes por
-              proyecto, salta a presupuestos. Si trabajas con soporte recurrente, usa el calculo
-              mensual. Y si lo tuyo son landings, ve a la herramienta especifica.
-            </p>
-          </div>
-
-          <div className="conversion-steps" aria-label="Pasos para aprovechar el panel">
-            <article className="conversion-step">
-              <h3>1. Elige el caso correcto</h3>
-              <p>Abre la app que mejor encaja con la decision que necesitas tomar hoy.</p>
-            </article>
-
-            <article className="conversion-step">
-              <h3>2. Calcula con contexto</h3>
-              <p>Introduce objetivo, costes, horas o alcance real para aterrizar una cifra mas util.</p>
-            </article>
-
-            <article className="conversion-step">
-              <h3>3. Vuelve al panel</h3>
-              <p>Usa este inventario como mapa rapido para cambiar de herramienta cuando cambie tu caso.</p>
-            </article>
-          </div>
-        </div>
-      </section>
+      <DecisionGuide />
 
       <section className="section">
         <div className="container text-block">
