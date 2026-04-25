@@ -5,26 +5,26 @@ import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import { getSiteUrl, siteConfig } from '@/lib/site';
 
-const route = '/herramientas-para-freelancers';
-const title = 'Herramientas para freelancers y autonomos digitales';
+const route = '/recursos-para-autonomos';
+const title = 'Recursos para autonomos que venden servicios digitales';
 const description =
-  'Seleccion practica de herramientas y calculadoras para freelancers y autonomos: facturacion, presupuestos, cuotas mensuales, landing pages y recursos para decidir mejor.';
+  'Guia practica con calculadoras y recursos para autonomos: cuanto facturar, programas de facturacion, presupuestos, cuotas recurrentes y herramientas para ordenar mejor el negocio.';
 
 const faqItems = [
   {
-    question: 'Que herramientas necesita de verdad un freelance para empezar?',
+    question: 'Por donde deberia empezar un autonomo si aun no tiene claro su precio?',
     answer:
-      'Como minimo, suele necesitar una forma clara de fijar precios, una herramienta para presupuestar y una solucion para ordenar la facturacion. El resto depende de su servicio y de la complejidad del negocio.',
+      'Lo mas util suele ser empezar por una referencia economica clara: cuanto necesita facturar al mes, cuanto margen deja cada servicio y como convertir ese numero en presupuesto o cuota mensual.',
   },
   {
-    question: 'Es mejor usar una sola herramienta para todo o varias mas pequenas?',
+    question: 'Tiene sentido usar una solucion gratuita de facturacion al principio?',
     answer:
-      'Depende del perfil. Muchas veces varias herramientas pequenas y especializadas dan mas claridad que una sola app enorme, sobre todo cuando estas definiendo precios o validando distintos tipos de servicios.',
+      'Puede tenerlo si el volumen es bajo y el objetivo inmediato es cumplir con la parte operativa. Cuando el negocio gana complejidad, suele compensar valorar software con mas automatizacion y mejor seguimiento.',
   },
   {
-    question: 'Esta pagina recomienda herramientas de pago?',
+    question: 'Esta pagina sustituye el criterio fiscal o el asesoramiento profesional?',
     answer:
-      'Esta pagina funciona como recurso editorial del ecosistema y prioriza la utilidad. Algunas recomendaciones pueden evolucionar con el tiempo, pero la idea base es ayudarte a entender que tipo de herramienta te conviene segun la pregunta que quieres resolver.',
+      'No. Funciona como recurso editorial y punto de entrada del ecosistema. Sirve para ordenar decisiones y descubrir herramientas utiles, pero no sustituye una revision profesional cuando la situacion lo requiere.',
   },
 ] as const;
 
@@ -35,11 +35,11 @@ export const metadata: Metadata = {
     canonical: route,
   },
   keywords: [
-    'herramientas para freelancers',
-    'herramientas para autonomos digitales',
-    'apps para freelancers espana',
     'recursos para autonomos',
-    'herramientas para presupuestar y facturar',
+    'herramientas para autonomos digitales',
+    'apps para autonomos espana',
+    'programas de facturacion autonomos',
+    'recursos para facturar y presupuestar',
   ],
   openGraph: {
     title: `${title} | ${siteConfig.name}`,
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function HerramientasParaFreelancersPage() {
+export default function RecursosParaAutonomosPage() {
   const siteUrl = getSiteUrl();
   const pageUrl = new URL(route, siteUrl).toString();
 
@@ -121,17 +121,17 @@ export default function HerramientasParaFreelancersPage() {
   return (
     <main>
       <Script
-        id="herramientas-freelancers-article-schema"
+        id="recursos-autonomos-article-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
       <Script
-        id="herramientas-freelancers-breadcrumb-schema"
+        id="recursos-autonomos-breadcrumb-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <Script
-        id="herramientas-freelancers-faq-schema"
+        id="recursos-autonomos-faq-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
@@ -142,34 +142,34 @@ export default function HerramientasParaFreelancersPage() {
         <div className="container article-layout">
           <div className="text-block">
             <span className="eyebrow">Recurso del ecosistema</span>
-            <h1>Herramientas para freelancers y autonomos digitales</h1>
+            <h1>Recursos para autonomos que venden servicios digitales</h1>
             <p className="lead">
-              No hace falta montar una pila enorme de software desde el primer dia. Lo que suele
-              hacer mas diferencia es tener claras tres cosas: cuanto deberias cobrar, como
-              presentar mejor ese precio y con que herramienta ordenar luego la parte operativa.
+              Si trabajas como autonomo y tu servicio depende de presupuestos, facturacion y una
+              operativa cada vez mas estable, este recurso te ayuda a ordenar las herramientas que
+              mas sentido tienen segun la pregunta que quieres resolver hoy.
             </p>
             <div className="hero-badges" aria-label="Que cubre este recurso">
               <span className="hero-badge">Facturacion</span>
               <span className="hero-badge">Presupuestos</span>
-              <span className="hero-badge">Servicios recurrentes</span>
+              <span className="hero-badge">Operativa</span>
             </div>
-          <div className="guide-cta">
-            <Link href="/#herramientas" className="tool-link">
-              Ver herramientas del panel
-            </Link>
-            <Link href="/recursos-para-autonomos" className="tool-link">
-              Ver recursos para autonomos
-            </Link>
+            <div className="guide-cta">
+              <Link href="/#herramientas" className="tool-link">
+                Ver herramientas del panel
+              </Link>
+              <Link href="/herramientas-para-freelancers" className="tool-link">
+                Ver recursos para freelancers
+              </Link>
+            </div>
           </div>
-        </div>
 
           <aside className="feature-card article-summary">
             <h2>Como usar esta pagina</h2>
             <ul className="article-list">
-              <li>Empieza por la pregunta que quieres resolver hoy.</li>
-              <li>Luego entra en la herramienta o guia mas especifica.</li>
-              <li>Evita montar una pila de software antes de fijar tu precio.</li>
-              <li>Usa el panel como mapa para no perder contexto entre herramientas.</li>
+              <li>Empieza por la pregunta economica o operativa que mas te bloquea.</li>
+              <li>Ve despues a la calculadora o guia mas especifica.</li>
+              <li>Usa software solo cuando ya tengas mas claro el numero base.</li>
+              <li>Apoyate en el panel para no perder contexto entre herramientas.</li>
             </ul>
           </aside>
         </div>
@@ -177,47 +177,46 @@ export default function HerramientasParaFreelancersPage() {
 
       <section className="section">
         <div className="container text-block">
-          <h2>Si eres freelance, no todas las herramientas resuelven el mismo problema</h2>
+          <h2>Para un autonomo, el orden importa mas que la cantidad de herramientas</h2>
           <p>
-            Hay herramientas para decidir mejor tus precios, herramientas para convertir ese precio
-            en un presupuesto o una propuesta y herramientas para ordenar la operativa del negocio
-            una vez que ya estas facturando.
+            Muchas veces el bloqueo no esta en que falte una aplicacion, sino en que todavia no
+            esta claro cuanto hay que facturar, que margen minimo deja cada servicio o que parte
+            del trabajo deberia convertirse en una cuota recurrente.
           </p>
           <p>
-            El error tipico es empezar por la parte operativa sin haber resuelto antes la parte
-            economica. Si no sabes cuanto necesitas facturar, ningun software de facturacion te va
-            a arreglar un precio mal planteado.
+            Cuando ese orden se aclara, elegir herramienta es bastante mas facil: primero numero,
+            despues presupuesto y por ultimo operativa.
           </p>
           <div className="disclaimer-box">
-            <strong>Idea clave:</strong> primero define tu numero, despues tu propuesta y solo
-            despues tu stack operativo.
+            <strong>Idea clave:</strong> antes de meter mas software, resuelve el numero que debe
+            sostener tu negocio.
           </div>
         </div>
       </section>
 
       <section className="section alt">
-        <div className="container feature-grid" aria-label="Tipos de herramientas por necesidad">
+        <div className="container feature-grid" aria-label="Bloques clave para autonomos">
           <article className="feature-card">
-            <h2>1. Para saber cuanto cobrar</h2>
+            <h2>1. Facturacion y referencia mensual</h2>
             <p>
-              Este es el bloque mas importante. Si no sabes cual es tu suelo economico, es facil
-              aceptar proyectos o cuotas que parecen razonables pero dejan poco margen.
+              Si no sabes cuanto necesitas facturar para llegar a tu neto objetivo, es facil que
+              aceptes proyectos razonables en apariencia pero flojos en rentabilidad real.
             </p>
           </article>
 
           <article className="feature-card">
-            <h2>2. Para convertirlo en una propuesta</h2>
+            <h2>2. Presupuestos y propuestas</h2>
             <p>
-              Una vez tienes una cifra sana, necesitas convertirla en presupuesto, propuesta
-              comercial, entregables y condiciones claras para defenderla mejor.
+              Una vez tienes una referencia mensual, toca convertirla en propuestas, alcances y
+              entregables defendibles para no presupuestar a ciegas.
             </p>
           </article>
 
           <article className="feature-card">
-            <h2>3. Para ordenar la operativa</h2>
+            <h2>3. Operativa y recurrencia</h2>
             <p>
-              Facturacion, gastos, cobros y parte normativa empiezan a pesar mas cuando ya estas
-              trabajando con clientes y no quieres perder tiempo en tareas administrativas.
+              Cuando el negocio ya rueda, necesitas ordenar facturacion, soporte recurrente y la
+              parte administrativa sin que se coma horas de trabajo util.
             </p>
           </article>
         </div>
@@ -226,14 +225,14 @@ export default function HerramientasParaFreelancersPage() {
       <section className="section">
         <div className="container text-block">
           <span className="eyebrow">Recursos clave</span>
-          <h2>Empieza por la necesidad que mas te bloquea hoy</h2>
+          <h2>Empieza por la herramienta que mejor encaja con tu problema actual</h2>
         </div>
-        <div className="container feature-grid" aria-label="Recursos destacados del ecosistema">
+        <div className="container feature-grid" aria-label="Recursos destacados para autonomos">
           <article className="feature-card">
             <h3>Si necesitas saber cuanto facturar</h3>
             <p>
-              Empieza por <a href="https://www.cuantofacturar.es">Cuanto Facturar</a> y refuerzalo
-              con la guia de{' '}
+              Empieza por <a href="https://www.cuantofacturar.es">Cuanto Facturar</a> y completa el
+              contexto con la guia de{' '}
               <a href="https://www.cuantofacturar.es/mejores-programas-facturacion-autonomos">
                 mejores programas de facturacion para autonomos
               </a>
@@ -242,10 +241,10 @@ export default function HerramientasParaFreelancersPage() {
           </article>
 
           <article className="feature-card">
-            <h3>Si necesitas presupuestar mejor un proyecto</h3>
+            <h3>Si ya presupuestas proyectos cerrados</h3>
             <p>
-              Ve a <a href="https://www.cuantopresupuestar.es">Cuanto Presupuestar</a> y apoyalo
-              con la{' '}
+              Usa <a href="https://www.cuantopresupuestar.es">Cuanto Presupuestar</a> y apoyalo con
+              la{' '}
               <a href="https://www.cuantopresupuestar.es/plantilla-presupuesto-freelance">
                 plantilla de presupuesto freelance
               </a>{' '}
@@ -271,12 +270,11 @@ export default function HerramientasParaFreelancersPage() {
           </article>
 
           <article className="feature-card">
-            <h3>Si tu servicio es una landing</h3>
+            <h3>Si tu servicio es una landing o una pieza concreta</h3>
             <p>
               Usa{' '}
               <a href="https://www.cuantocobrarlandingpage.es">Cuanto Cobrar Landing Page</a> para
-              aterrizar mejor el precio de un servicio muy concreto y no mezclarlo con proyectos mas
-              amplios.
+              validar mejor un servicio cerrado y no mezclarlo con proyectos o cuotas mas amplias.
             </p>
           </article>
         </div>
@@ -284,16 +282,16 @@ export default function HerramientasParaFreelancersPage() {
 
       <section className="section alt">
         <div className="container text-block">
-          <h2>Que orden suele ser mas sano para montar tu stack</h2>
+          <h2>El orden mas sano para un autonomo de servicios</h2>
           <ol className="article-list article-list-ordered">
-            <li>Primero define cuanto necesitas facturar o cobrar.</li>
+            <li>Primero define tu objetivo mensual y tu suelo economico.</li>
             <li>Despues convierte ese numero en presupuesto o propuesta.</li>
-            <li>Luego ordena la facturacion y la operativa con software.</li>
-            <li>Y solo cuando el proceso esta estable, anade capas extra.</li>
+            <li>Ordena luego la facturacion y la parte operativa.</li>
+            <li>Y solo despues anade capas extra de software o procesos.</li>
           </ol>
           <p>
-            Ese orden parece simple, pero suele evitar bastante friccion. Muchas veces el problema
-            no es que falte software, sino que todavia no esta claro el precio base del negocio.
+            Ese orden reduce bastante la sensacion de caos. No necesitas todas las herramientas a
+            la vez; necesitas la correcta en el momento correcto.
           </p>
         </div>
       </section>
@@ -301,16 +299,12 @@ export default function HerramientasParaFreelancersPage() {
       <section className="section">
         <div className="container text-block">
           <span className="eyebrow">Siguiente paso</span>
-          <h2>Usa el panel como mapa y las apps como herramientas especializadas</h2>
+          <h2>Usa el panel como mapa y vuelve cuando cambie tu pregunta</h2>
           <p>
-            Si vuelves aqui dentro de unos dias, esta pagina deberia ayudarte a entrar mas rapido en
-            la herramienta correcta segun la duda que tengas: facturacion, presupuesto, mantenimiento
-            o servicios concretos.
-          </p>
-          <p>
-            Si tu foco esta mas en la operativa, la facturacion o el dia a dia de un negocio como
-            autonomo, revisa tambien la pagina de{' '}
-            <Link href="/recursos-para-autonomos">recursos para autonomos</Link>.
+            Esta pagina esta pensada para darte una vista mas operativa del ecosistema. Si tu foco
+            es mas de servicios digitales, tambien puedes revisar la pagina de{' '}
+            <Link href="/herramientas-para-freelancers">herramientas para freelancers</Link> y
+            usar ambas como puertas de entrada segun la duda que tengas.
           </p>
           <div className="guide-cta">
             <Link href="/#herramientas" className="tool-link">
@@ -320,10 +314,10 @@ export default function HerramientasParaFreelancersPage() {
         </div>
       </section>
 
-      <section className="section alt" aria-labelledby="herramientas-freelancers-faq-title">
+      <section className="section alt" aria-labelledby="recursos-autonomos-faq-title">
         <div className="container text-block">
-          <h2 id="herramientas-freelancers-faq-title">
-            Preguntas frecuentes sobre herramientas para freelancers
+          <h2 id="recursos-autonomos-faq-title">
+            Preguntas frecuentes sobre recursos para autonomos
           </h2>
 
           <div className="faq-list">

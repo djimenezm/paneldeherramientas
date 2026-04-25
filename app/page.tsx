@@ -158,6 +158,9 @@ export default function HomePage() {
             <Link href="/herramientas-para-freelancers" className="tool-link">
               Ver recursos para freelancers
             </Link>
+            <Link href="/recursos-para-autonomos" className="tool-link">
+              Ver recursos para autonomos
+            </Link>
           </div>
         </div>
       </section>

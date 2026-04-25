@@ -1,7 +1,14 @@
 import type { MetadataRoute } from 'next';
 import { getSiteUrl } from '@/lib/site';
 
-const routes = ['/', '/herramientas-para-freelancers', '/aviso-legal', '/privacidad', '/cookies'];
+const routes = [
+  '/',
+  '/herramientas-para-freelancers',
+  '/recursos-para-autonomos',
+  '/aviso-legal',
+  '/privacidad',
+  '/cookies',
+];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const siteUrl = getSiteUrl();
