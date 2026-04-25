@@ -165,6 +165,40 @@ h3 {
   max-width: 62ch;
 }
 
+.article-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.article-summary h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.article-list {
+  margin: 0;
+  padding-left: 1.15rem;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.article-list li + li {
+  margin-top: 0.45rem;
+}
+
+.article-list-ordered {
+  padding-left: 1.35rem;
+}
+
+.guide-cta {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1.25rem;
+}
+
 .section-heading {
   max-width: 780px;
   margin-bottom: 1.5rem;
@@ -582,6 +616,7 @@ h3 {
 
 @media (max-width: 900px) {
   .hero-panel,
+  .article-layout,
   .feature-grid,
   .tools-grid,
   .routes-grid,

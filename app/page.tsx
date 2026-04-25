@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Script from 'next/script';
 import DecisionGuide from '@/components/DecisionGuide';
 import FAQ, { faqItems } from '@/components/FAQ';
@@ -152,6 +153,11 @@ export default function HomePage() {
           <div className="disclaimer-box">
             <strong>Idea clave:</strong> este panel no es una herramienta mas, sino el mapa para
             encontrar la que mejor te sirve en cada momento.
+          </div>
+          <div className="guide-cta">
+            <Link href="/herramientas-para-freelancers" className="tool-link">
+              Ver recursos para freelancers
+            </Link>
           </div>
         </div>
       </section>
