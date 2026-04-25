@@ -160,6 +160,9 @@ export default function HerramientasParaFreelancersPage() {
             <Link href="/recursos-para-autonomos" className="tool-link">
               Ver recursos para autonomos
             </Link>
+            <Link href="/mejores-herramientas-para-presupuestos-freelance" className="tool-link">
+              Ver herramientas para presupuestos
+            </Link>
           </div>
         </div>
 
@@ -311,6 +314,14 @@ export default function HerramientasParaFreelancersPage() {
             Si tu foco esta mas en la operativa, la facturacion o el dia a dia de un negocio como
             autonomo, revisa tambien la pagina de{' '}
             <Link href="/recursos-para-autonomos">recursos para autonomos</Link>.
+          </p>
+          <p>
+            Y si quieres centrarte solo en la parte de presupuestos, plantillas y propuestas, entra
+            tambien en{' '}
+            <Link href="/mejores-herramientas-para-presupuestos-freelance">
+              mejores herramientas para presupuestos freelance
+            </Link>
+            .
           </p>
           <div className="guide-cta">
             <Link href="/#herramientas" className="tool-link">
