@@ -154,6 +154,9 @@ export default function HerramientasParaFreelancersPage() {
               <span className="hero-badge">Servicios recurrentes</span>
             </div>
           <div className="guide-cta">
+            <Link href="/calculadoras-para-freelancers" className="tool-link">
+              Ver calculadoras para freelancers
+            </Link>
             <Link href="/#herramientas" className="tool-link">
               Ver herramientas del panel
             </Link>
