@@ -21,7 +21,7 @@ export default function HomePage() {
   const itemListSchema = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    name: 'Herramientas publicas del ecosistema',
+    name: 'Herramientas públicas del ecosistema',
     itemListElement: tools.map((tool, index) => ({
       '@type': 'ListItem',
       position: index + 1,
@@ -33,7 +33,7 @@ export default function HomePage() {
   const guideListSchema = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    name: 'Guias destacadas del ecosistema',
+    name: 'Guías destacadas del ecosistema',
     itemListElement: featuredGuides.map((guide, index) => ({
       '@type': 'ListItem',
       position: index + 1,
@@ -103,7 +103,7 @@ export default function HomePage() {
             <span className="eyebrow">Panel central</span>
             <h1>Todas las herramientas del ecosistema en un solo sitio</h1>
             <p className="lead">
-              Este panel reune las calculadoras y utilidades publicas que ya estan en marcha para
+              Este panel reúne las calculadoras y utilidades públicas que ya están en marcha para
               ayudarte a facturar mejor, presupuestar proyectos, fijar cuotas recurrentes o poner
               precio a una landing page sin ir a ciegas.
             </p>
@@ -113,13 +113,13 @@ export default function HomePage() {
               <span className="hero-badge">{pendingTools.length} en despliegue</span>
             </div>
             <ul className="hero-points">
-              <li>Un punto de entrada unico para todas las apps publicas del ecosistema.</li>
-              <li>Herramientas pequenas, especializadas y pensadas para freelancers y autonomos.</li>
-              <li>Actualizado conforme se publican nuevas calculadoras y guias.</li>
+              <li>Un punto de entrada único para todas las apps públicas del ecosistema.</li>
+              <li>Herramientas pequeñas, especializadas y pensadas para freelancers y autónomos.</li>
+              <li>Actualizado conforme se publican nuevas calculadoras y guías.</li>
             </ul>
             <div className="guide-cta">
               <Link href="/mejores-herramientas-para-facturacion-autonomos" className="tool-link">
-                Empezar por facturacion
+                Empezar por facturación
               </Link>
               <Link
                 href="/mejores-herramientas-para-presupuestos-freelance"
@@ -130,11 +130,11 @@ export default function HomePage() {
             </div>
           </div>
 
-          <aside className="hero-summary" aria-label="Resumen rapido del panel">
+          <aside className="hero-summary" aria-label="Resumen rápido del panel">
             <div className="hero-summary-card">
               <span>Para objetivos mensuales</span>
               <strong>Cuanto Facturar</strong>
-              <p>Pasa de neto objetivo a facturacion, IRPF, IVA y tarifa por hora.</p>
+              <p>Pasa de neto objetivo a facturación, IRPF, IVA y tarifa por hora.</p>
             </div>
             <div className="hero-summary-card">
               <span>Para proyectos cerrados</span>
@@ -144,7 +144,7 @@ export default function HomePage() {
             <div className="hero-summary-card">
               <span>Para ingresos recurrentes</span>
               <strong>Mantenimiento Web Mensual</strong>
-              <p>Fija cuotas de soporte y mantenimiento con mas criterio.</p>
+              <p>Fija cuotas de soporte y mantenimiento con más criterio.</p>
             </div>
           </aside>
         </div>
@@ -152,8 +152,8 @@ export default function HomePage() {
 
       <section className="section">
         <div className="container section-heading">
-          <span className="eyebrow">Empieza por aqui</span>
-          <h2>Elige la rama segun la pregunta que quieres resolver hoy</h2>
+          <span className="eyebrow">Empieza por aquí</span>
+          <h2>Elige la rama según la pregunta que quieres resolver hoy</h2>
           <p className="section-lead">
             Si vienes con una duda concreta, no hace falta recorrer todo el panel. Estas cuatro
             rutas te llevan a la parte del ecosistema que mejor encaja con tu bloqueo principal.
@@ -164,12 +164,12 @@ export default function HomePage() {
             <span className="route-kicker">Facturacion</span>
             <h3>No se cuanto deberia facturar al mes</h3>
             <p>
-              Empieza por la rama de facturacion si tu problema principal es entender cuota, IRPF,
+              Empieza por la rama de facturación si tu problema principal es entender cuota, IRPF,
               IVA y una cifra mensual defendible.
             </p>
             <div className="guide-cta">
               <Link href="/mejores-herramientas-para-facturacion-autonomos" className="tool-link">
-                Ver herramientas para facturacion
+                Ver herramientas para facturación
               </Link>
             </div>
           </article>
@@ -179,7 +179,7 @@ export default function HomePage() {
             <h3>Quiero aterrizar mejor un proyecto cerrado</h3>
             <p>
               Si vendes proyectos con alcance, entregables y margen, esta ruta te lleva a las
-              piezas mas utiles para presupuestar mejor.
+              piezas más útiles para presupuestar mejor.
             </p>
             <div className="guide-cta">
               <Link
@@ -195,7 +195,7 @@ export default function HomePage() {
             <span className="route-kicker">Mantenimiento</span>
             <h3>Quiero poner cuota a soporte o mantenimiento</h3>
             <p>
-              Usa esta rama si lo que vendes es recurrente y necesitas una cuota mensual mas clara
+              Usa esta rama si lo que vendes es recurrente y necesitas una cuota mensual más clara
               para soporte, mantenimiento o bolsas de horas.
             </p>
             <div className="guide-cta">
@@ -209,8 +209,8 @@ export default function HomePage() {
             <span className="route-kicker">Landing pages</span>
             <h3>Solo quiero saber cuanto cobrar una landing</h3>
             <p>
-              Si tu servicio es muy concreto y no quieres mezclarlo con proyectos mas grandes,
-              esta ruta te baja rapido al caso de una landing page.
+              Si tu servicio es muy concreto y no quieres mezclarlo con proyectos más grandes,
+              esta ruta te baja rápido al caso de una landing page.
             </p>
             <div className="guide-cta">
               <Link href="/mejores-herramientas-para-landing-pages" className="tool-link">
@@ -226,13 +226,13 @@ export default function HomePage() {
           <span className="eyebrow">Flujo recomendado</span>
           <h2>Usa las herramientas como una secuencia, no como piezas sueltas</h2>
           <p className="section-lead">
-            El camino mas util es empezar por tu suelo mensual y bajar despues a presupuestos,
+            El camino más útil es empezar por tu suelo mensual y bajar después a presupuestos,
             cuotas o servicios concretos. Todas las calculadoras activas devuelven ahora un resumen
             corto que puedes copiar y guardar.
           </p>
         </div>
 
-        <div className="container workflow-grid" aria-label="Flujo recomendado de calculo">
+        <div className="container workflow-grid" aria-label="Flujo recomendado de cálculo">
           {pricingWorkflow.map((workflowStep) => (
             <article className="workflow-card" key={workflowStep.step}>
               <div className="workflow-step">{workflowStep.step}</div>
@@ -251,11 +251,11 @@ export default function HomePage() {
       </section>
 
       <section className="section">
-        <div className="container feature-grid" aria-label="Que puedes resolver desde el panel">
+        <div className="container feature-grid" aria-label="Qué puedes resolver desde el panel">
           <article className="feature-card">
             <h2>Precios de trabajo recurrente</h2>
             <p>
-              Si ofreces soporte, mantenimiento o bolsas de horas mensuales, aqui podras encontrar
+              Si ofreces soporte, mantenimiento o bolsas de horas mensuales, aquí podrás encontrar
               herramientas para defender una cuota sin improvisar cada mes.
             </p>
           </article>
@@ -264,15 +264,15 @@ export default function HomePage() {
             <h2>Precios de proyectos cerrados</h2>
             <p>
               Si vendes webs, landings o paquetes cerrados, las apps del panel te ayudan a detectar
-              tu suelo economico y el margen minimo que deberias proteger.
+              tu suelo económico y el margen mínimo que deberías proteger.
             </p>
           </article>
 
           <article className="feature-card">
             <h2>Referencia para decidir mejor</h2>
             <p>
-              Ninguna herramienta sustituye una revision profesional cuando toca, pero todas estan
-              pensadas para ayudarte a tomar decisiones mas claras y menos intuitivas.
+              Ninguna herramienta sustituye una revisión profesional cuando toca, pero todas están
+              pensadas para ayudarte a tomar decisiones más claras y menos intuitivas.
             </p>
           </article>
         </div>
@@ -282,16 +282,16 @@ export default function HomePage() {
 
       <section className="section alt" id="guias-destacadas">
         <div className="container section-heading">
-          <span className="eyebrow">Guias destacadas</span>
-          <h2>Rutas nuevas para profundizar despues de usar una calculadora</h2>
+          <span className="eyebrow">Guías destacadas</span>
+          <h2>Rutas nuevas para profundizar después de usar una calculadora</h2>
           <p className="section-lead">
             Estas paginas atacan dudas muy concretas y conectan cada herramienta con una siguiente
-            lectura practica. Son buenos puntos de entrada si llegas desde buscadores o si quieres
-            pasar de la cifra a una decision.
+            lectura práctica. Son buenos puntos de entrada si llegas desde buscadores o si quieres
+            pasar de la cifra a una decisión.
           </p>
         </div>
 
-        <div className="container guide-grid" aria-label="Guias destacadas del ecosistema">
+        <div className="container guide-grid" aria-label="Guías destacadas del ecosistema">
           {featuredGuides.map((guide) => (
             <article className="guide-card" key={guide.href}>
               <div className="tool-meta">
@@ -316,15 +316,15 @@ export default function HomePage() {
           <h2>Un inventario publico pensado para crecer sin perder claridad</h2>
           <p>
             El objetivo del panel es que no tengas que recordar dominios sueltos ni depender de una
-            sola app gigante. Aqui puedes ver de un vistazo que herramientas estan activas, cuales
-            acaban de salir y que parte del problema resuelve cada una.
+            sola app gigante. Aquí puedes ver de un vistazo qué herramientas están activas, cuáles
+            acaban de salir y qué parte del problema resuelve cada una.
           </p>
           <p>
-            La idea es seguir anadiendo nuevas herramientas utiles y mantener este panel como punto
-            de entrada comun. Menos ruido, menos duplicacion y mas foco para elegir rapido.
+            La idea es seguir añadiendo nuevas herramientas útiles y mantener este panel como punto
+            de entrada común. Menos ruido, menos duplicación y más foco para elegir rápido.
           </p>
           <div className="disclaimer-box">
-            <strong>Idea clave:</strong> este panel no es una herramienta mas, sino el mapa para
+            <strong>Idea clave:</strong> este panel no es una herramienta más, sino el mapa para
             encontrar la que mejor te sirve en cada momento.
           </div>
           <div className="guide-cta">
@@ -332,7 +332,7 @@ export default function HomePage() {
               Ver recursos para freelancers
             </Link>
             <Link href="/recursos-para-autonomos" className="tool-link">
-              Ver recursos para autonomos
+              Ver recursos para autónomos
             </Link>
             <Link href="/mejores-herramientas-para-presupuestos-freelance" className="tool-link">
               Ver herramientas para presupuestar mejor
@@ -344,7 +344,7 @@ export default function HomePage() {
               Ver herramientas para landing pages
             </Link>
             <Link href="/mejores-herramientas-para-facturacion-autonomos" className="tool-link">
-              Ver herramientas para facturacion
+              Ver herramientas para facturación
             </Link>
           </div>
         </div>

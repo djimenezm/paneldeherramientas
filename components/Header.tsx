@@ -8,12 +8,12 @@ export default function Header() {
           Panel de Herramientas
         </Link>
 
-        <nav className="nav" aria-label="Navegacion principal">
+        <nav className="nav" aria-label="Navegación principal">
           <Link href="/#herramientas">Herramientas</Link>
-          <Link href="/#guias-destacadas">Guias</Link>
+          <Link href="/#guias-destacadas">Guías</Link>
           <Link href="/herramientas-para-freelancers">Freelancers</Link>
-          <Link href="/recursos-para-autonomos">Autonomos</Link>
-          <Link href="/#como-funciona">Como usarlo</Link>
+          <Link href="/recursos-para-autonomos">Autónomos</Link>
+          <Link href="/#como-funciona">Cómo usarlo</Link>
           <Link href="/#faq">FAQ</Link>
         </nav>
       </div>

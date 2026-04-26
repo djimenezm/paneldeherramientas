@@ -1,28 +1,28 @@
 export const faqItems = [
   {
-    question: 'Que es este panel?',
+    question: '¿Qué es este panel?',
     answer:
-      'Es una web central que reune todas las herramientas publicas del ecosistema para freelancers y autonomos. Sirve como inventario y punto de entrada para elegir rapidamente la calculadora que mejor encaja con tu caso.',
+      'Es una web central que reúne todas las herramientas públicas del ecosistema para freelancers y autónomos. Sirve como inventario y punto de entrada para elegir rápidamente la calculadora que mejor encaja con tu caso.',
   },
   {
-    question: 'Por que separar las herramientas en apps distintas?',
+    question: '¿Por qué separar las herramientas en apps distintas?',
     answer:
-      'Porque cada problema tiene una logica propia. Facturar como autonomo, presupuestar proyectos, fijar retainers o poner precio a una landing page no se resuelven igual y una app especializada suele ser mas clara que una mega calculadora.',
+      'Porque cada problema tiene una lógica propia. Facturar como autónomo, presupuestar proyectos, fijar retainers o poner precio a una landing page no se resuelven igual y una app especializada suele ser más clara que una mega calculadora.',
   },
   {
-    question: 'Las herramientas son gratuitas?',
+    question: '¿Las herramientas son gratuitas?',
     answer:
-      'Si. El panel lista herramientas publicas y de uso libre. Algunas pueden estar en despliegue o evolucionar con nuevas paginas y funciones, pero la idea base es que sigan siendo accesibles.',
+      'Sí. El panel lista herramientas públicas y de uso libre. Algunas pueden estar en despliegue o evolucionar con nuevas páginas y funciones, pero la idea base es que sigan siendo accesibles.',
   },
   {
-    question: 'Estan pensadas solo para Espana?',
+    question: '¿Están pensadas solo para España?',
     answer:
-      'La mayoria nacen pensando en el contexto de Espana, especialmente cuando afectan a cuota de autonomos, IRPF o IVA. Aun asi, algunas partes pueden servir como referencia general para otros mercados.',
+      'La mayoría nacen pensando en el contexto de España, especialmente cuando afectan a cuota de autónomos, IRPF o IVA. Aun así, algunas partes pueden servir como referencia general para otros mercados.',
   },
   {
-    question: 'Se iran anadiendo nuevas herramientas?',
+    question: '¿Se irán añadiendo nuevas herramientas?',
     answer:
-      'Si. El panel esta pensado para crecer con nuevas calculadoras y recursos. La idea es que puedas volver aqui y encontrar rapidamente que herramientas estan activas, cuales son nuevas y cuales estan en despliegue.',
+      'Sí. El panel está pensado para crecer con nuevas calculadoras y recursos. La idea es que puedas volver aquí y encontrar rápidamente qué herramientas están activas, cuáles son nuevas y cuáles están en despliegue.',
   },
 ] as const;
 

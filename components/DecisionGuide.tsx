@@ -5,10 +5,10 @@ export default function DecisionGuide() {
     <section className="section alt" id="como-funciona" aria-labelledby="decision-guide-title">
       <div className="container">
         <div className="section-heading">
-          <span className="eyebrow">Rutas rapidas</span>
+          <span className="eyebrow">Rutas rápidas</span>
           <h2 id="decision-guide-title">Empieza por la pregunta correcta</h2>
           <p className="section-lead">
-            Si no tienes claro que herramienta abrir primero, usa estas rutas como atajo. Cada una
+            Si no tienes claro qué herramienta abrir primero, usa estas rutas como atajo. Cada una
             responde a una necesidad distinta y devuelve un tipo de resultado diferente.
           </p>
         </div>
@@ -26,10 +26,10 @@ export default function DecisionGuide() {
           ))}
         </div>
 
-        <div className="matrix-card" aria-label="Comparativa rapida de herramientas">
+          <div className="matrix-card" aria-label="Comparativa rápida de herramientas">
           <div className="matrix-head">
-            <h3>Comparativa rapida</h3>
-            <p>Que te devuelve cada herramienta y cuando compensa abrirla primero.</p>
+            <h3>Comparativa rápida</h3>
+            <p>Qué te devuelve cada herramienta y cuándo compensa abrirla primero.</p>
           </div>
 
           <div className="matrix-list">
@@ -44,7 +44,7 @@ export default function DecisionGuide() {
                     <strong>Salida principal:</strong> {tool.output}
                   </p>
                   <p>
-                    <strong>Cuando usarla:</strong> {tool.bestWhen}
+                    <strong>Cuándo usarla:</strong> {tool.bestWhen}
                   </p>
                 </div>
               </article>

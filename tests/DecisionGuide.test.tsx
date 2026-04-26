@@ -6,8 +6,8 @@ describe('DecisionGuide', () => {
     render(<DecisionGuide />);
 
     expect(screen.getByText('Empieza por la pregunta correcta')).toBeInTheDocument();
-    expect(screen.getByText('Quiero saber cuanto necesito facturar al mes.')).toBeInTheDocument();
+    expect(screen.getByText('Quiero saber cuánto necesito facturar al mes.')).toBeInTheDocument();
     expect(screen.getByText('Quiero aterrizar un presupuesto cerrado por proyecto.')).toBeInTheDocument();
-    expect(screen.getAllByText('Comparativa rapida')).toHaveLength(1);
+    expect(screen.getAllByText('Comparativa rápida')).toHaveLength(1);
   });
 });

@@ -45,7 +45,7 @@ export default function ToolDirectory() {
           <span className="eyebrow">Inventario actual</span>
           <h2 id="tools-title">Elige la herramienta que necesitas ahora</h2>
           <p className="section-lead">
-            Cada app resuelve una parte concreta del mismo problema: poner precio con mas criterio,
+            Cada app resuelve una parte concreta del mismo problema: poner precio con más criterio,
             presupuestar mejor y no vender tu trabajo a ciegas.
           </p>
         </div>
@@ -62,7 +62,7 @@ export default function ToolDirectory() {
             />
           </label>
 
-          <div className="category-chips" aria-label="Filtrar por categoria">
+          <div className="category-chips" aria-label="Filtrar por categoría">
             {allCategories.map((category) => (
               <button
                 type="button"
@@ -123,7 +123,7 @@ export default function ToolDirectory() {
           <div className="empty-state" role="status">
             <strong>No hay coincidencias con ese filtro.</strong>
             <p>
-              Prueba otra palabra o vuelve a la categoria <em>Todas</em> para ver el inventario
+              Prueba otra palabra o vuelve a la categoría <em>Todas</em> para ver el inventario
               completo.
             </p>
           </div>
