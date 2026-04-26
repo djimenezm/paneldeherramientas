@@ -254,6 +254,17 @@ export default function MejoresHerramientasLandingPagesPage() {
           </article>
 
           <article className="feature-card">
+            <h3>Mejor para definir que entra</h3>
+            <p>
+              Si ya sabes que sera una landing, usa{' '}
+              <a href="https://www.cuantocobrarlandingpage.es/que-incluye-una-landing-page">
+                que incluye una landing page
+              </a>{' '}
+              para separar secciones, copy, integraciones, revisiones y extras.
+            </p>
+          </article>
+
+          <article className="feature-card">
             <h3>Mejor para presupuestos mas amplios</h3>
             <p>
               Si la landing forma parte de un proyecto mayor o de una propuesta mas completa, te
