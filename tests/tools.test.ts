@@ -1,4 +1,4 @@
-import { featuredGuides, liveTools, pendingTools, tools } from '@/lib/tools';
+import { featuredGuides, liveTools, pendingTools, pricingWorkflow, tools } from '@/lib/tools';
 
 describe('tools registry', () => {
   it('lists the full catalog with the four tools already active', () => {
@@ -25,6 +25,20 @@ describe('tools registry', () => {
       expect(guide.trackingHref).toContain('utm_source=paneldeherramientas');
       expect(guide.trackingHref).toContain('utm_medium=hub-guide');
       expect(tools.some((tool) => tool.name === guide.relatedTool)).toBe(true);
+    });
+  });
+
+  it('keeps the recommended workflow connected to active tools', () => {
+    expect(pricingWorkflow).toHaveLength(4);
+
+    pricingWorkflow.forEach((workflowStep, index) => {
+      expect(workflowStep.step).toBe(String(index + 1).padStart(2, '0'));
+      expect(workflowStep.href.startsWith('https://www.')).toBe(true);
+      expect(workflowStep.trackingHref).toContain('utm_source=paneldeherramientas');
+      expect(workflowStep.trackingHref).toContain('utm_medium=pricing-workflow');
+      expect(workflowStep.trackingHref).toContain('utm_campaign=workflow_sequence');
+      expect(tools.some((tool) => tool.name === workflowStep.toolName)).toBe(true);
+      expect(workflowStep.takeaway.toLowerCase()).toMatch(/resumen|nota|cuota|precio/);
     });
   });
 });

@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import ToolDirectory from '@/components/ToolDirectory';
 import { siteConfig } from '@/lib/site';
-import { featuredGuides, liveTools, pendingTools, tools } from '@/lib/tools';
+import { featuredGuides, liveTools, pendingTools, pricingWorkflow, tools } from '@/lib/tools';
 
 export default function HomePage() {
   const websiteSchema = {
@@ -42,6 +42,18 @@ export default function HomePage() {
     })),
   };
 
+  const workflowListSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Flujo recomendado para poner precios',
+    itemListElement: pricingWorkflow.map((workflowStep, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: workflowStep.title,
+      url: workflowStep.href,
+    })),
+  };
+
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -71,6 +83,11 @@ export default function HomePage() {
         id="guide-list-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(guideListSchema) }}
+      />
+      <Script
+        id="workflow-list-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(workflowListSchema) }}
       />
       <Script
         id="faq-schema"
@@ -204,7 +221,36 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section alt">
+      <section className="section alt" id="flujo-recomendado">
+        <div className="container section-heading">
+          <span className="eyebrow">Flujo recomendado</span>
+          <h2>Usa las herramientas como una secuencia, no como piezas sueltas</h2>
+          <p className="section-lead">
+            El camino mas util es empezar por tu suelo mensual y bajar despues a presupuestos,
+            cuotas o servicios concretos. Todas las calculadoras activas devuelven ahora un resumen
+            corto que puedes copiar y guardar.
+          </p>
+        </div>
+
+        <div className="container workflow-grid" aria-label="Flujo recomendado de calculo">
+          {pricingWorkflow.map((workflowStep) => (
+            <article className="workflow-card" key={workflowStep.step}>
+              <div className="workflow-step">{workflowStep.step}</div>
+              <span className="route-kicker">{workflowStep.toolName}</span>
+              <h3>{workflowStep.title}</h3>
+              <p>{workflowStep.description}</p>
+              <div className="workflow-takeaway">
+                <strong>Resultado:</strong> {workflowStep.takeaway}
+              </div>
+              <a href={workflowStep.trackingHref} className="tool-link">
+                Abrir {workflowStep.toolName}
+              </a>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="section">
         <div className="container feature-grid" aria-label="Que puedes resolver desde el panel">
           <article className="feature-card">
             <h2>Precios de trabajo recurrente</h2>

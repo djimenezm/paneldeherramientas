@@ -22,6 +22,16 @@ export type FeaturedGuide = {
   relatedTool: string;
 };
 
+export type PricingWorkflowStep = {
+  step: string;
+  title: string;
+  description: string;
+  toolName: string;
+  href: string;
+  trackingHref: string;
+  takeaway: string;
+};
+
 export const tools: ToolItem[] = [
   {
     name: 'Cuanto Facturar',
@@ -90,6 +100,79 @@ export const tools: ToolItem[] = [
     tags: ['Landing page', 'Integraciones', 'Copywriting'],
     availability: 'Activa',
     isLive: true,
+  },
+];
+
+function getToolByName(name: string) {
+  const tool = tools.find((currentTool) => currentTool.name === name);
+
+  if (!tool) {
+    throw new Error(`Tool not found: ${name}`);
+  }
+
+  return tool;
+}
+
+function buildPanelTrackingUrl(href: string, medium: string, campaign: string) {
+  return `${href}?utm_source=paneldeherramientas&utm_medium=${medium}&utm_campaign=${campaign}`;
+}
+
+export const pricingWorkflow: PricingWorkflowStep[] = [
+  {
+    step: '01',
+    title: 'Calcula primero tu suelo mensual',
+    description:
+      'Empieza por saber cuanto necesitas facturar para que cualquier precio posterior tenga una base real.',
+    toolName: 'Cuanto Facturar',
+    href: getToolByName('Cuanto Facturar').href,
+    trackingHref: buildPanelTrackingUrl(
+      getToolByName('Cuanto Facturar').href,
+      'pricing-workflow',
+      'workflow_sequence',
+    ),
+    takeaway: 'Sales con facturacion objetivo, tarifa por hora y resumen copiable.',
+  },
+  {
+    step: '02',
+    title: 'Convierte esa base en presupuestos cerrados',
+    description:
+      'Usa horas, costes, buffer y margen para pasar de intuicion a propuesta defendible por proyecto.',
+    toolName: 'Cuanto Presupuestar',
+    href: getToolByName('Cuanto Presupuestar').href,
+    trackingHref: buildPanelTrackingUrl(
+      getToolByName('Cuanto Presupuestar').href,
+      'pricing-workflow',
+      'workflow_sequence',
+    ),
+    takeaway: 'Obtienes minimo, recomendado y una nota corta para pegar en tu propuesta.',
+  },
+  {
+    step: '03',
+    title: 'Separa los ingresos recurrentes',
+    description:
+      'Si vendes soporte o mantenimiento, calcula una cuota mensual independiente de los proyectos cerrados.',
+    toolName: 'Mantenimiento Web Mensual',
+    href: getToolByName('Mantenimiento Web Mensual').href,
+    trackingHref: buildPanelTrackingUrl(
+      getToolByName('Mantenimiento Web Mensual').href,
+      'pricing-workflow',
+      'workflow_sequence',
+    ),
+    takeaway: 'Defines cuota minima, cuota recomendada, horas incluidas y margen de negociacion.',
+  },
+  {
+    step: '04',
+    title: 'Aterriza casos concretos como landing pages',
+    description:
+      'Cuando el servicio es muy especifico, baja al detalle de secciones, integraciones, copy y revisiones.',
+    toolName: 'Cuanto Cobrar Landing Page',
+    href: getToolByName('Cuanto Cobrar Landing Page').href,
+    trackingHref: buildPanelTrackingUrl(
+      getToolByName('Cuanto Cobrar Landing Page').href,
+      'pricing-workflow',
+      'workflow_sequence',
+    ),
+    takeaway: 'Te llevas precio recomendado, alcance resumido y limites para negociar.',
   },
 ];
 
