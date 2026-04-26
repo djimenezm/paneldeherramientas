@@ -1,3 +1,5 @@
+const productionUrl = 'https://www.paneldeherramientas.es';
+
 export const siteConfig = {
   name: 'Panel de Herramientas',
   shortName: 'Panel',
@@ -13,7 +15,7 @@ export const siteConfig = {
     'apps para autonomos y freelancers',
     'hub de herramientas digitales',
   ],
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3005',
+  url: process.env.NODE_ENV === 'development' ? 'http://localhost:3005' : productionUrl,
   ownerName: 'Equipo de Panel de Herramientas',
   contactEmail: null,
   country: 'Espana',

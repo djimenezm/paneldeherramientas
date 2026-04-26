@@ -2,8 +2,10 @@ import sitemap from '@/app/sitemap';
 
 describe('sitemap', () => {
   it('includes the public hub routes', () => {
-    const paths = sitemap().map((entry) => new URL(entry.url).pathname);
+    const urls = sitemap().map((entry) => new URL(entry.url));
+    const paths = urls.map((url) => url.pathname);
 
+    urls.forEach((url) => expect(url.origin).toBe('https://www.paneldeherramientas.es'));
     expect(paths).toContain('/');
     expect(paths).toContain('/herramientas-para-freelancers');
     expect(paths).toContain('/recursos-para-autonomos');
