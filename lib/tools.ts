@@ -208,6 +208,16 @@ export const featuredGuides: FeaturedGuide[] = [
     relatedTool: 'Cuanto Presupuestar',
   },
   {
+    title: 'Precio cerrado o por horas freelance',
+    href: 'https://www.cuantopresupuestar.es/precio-cerrado-o-por-horas-freelance',
+    trackingHref:
+      'https://www.cuantopresupuestar.es/precio-cerrado-o-por-horas-freelance?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
+    category: 'Presupuestos',
+    description:
+      'Decide cuando vender por proyecto cerrado, por horas o por fases sin regalar margen ni mezclar alcances.',
+    relatedTool: 'Cuanto Presupuestar',
+  },
+  {
     title: 'Presupuesto de desarrollo web freelance',
     href: 'https://www.cuantopresupuestar.es/presupuesto-desarrollo-web-freelance',
     trackingHref:

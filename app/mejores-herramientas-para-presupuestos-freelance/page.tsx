@@ -250,6 +250,17 @@ export default function MejoresHerramientasPresupuestosFreelancePage() {
           </article>
 
           <article className="feature-card">
+            <h3>Mejor para elegir modelo de cobro</h3>
+            <p>
+              Si dudas entre cobrar por proyecto cerrado, por horas o por fases, revisa la guia de{' '}
+              <a href="https://www.cuantopresupuestar.es/precio-cerrado-o-por-horas-freelance">
+                precio cerrado o por horas freelance
+              </a>{' '}
+              antes de enviar la propuesta.
+            </p>
+          </article>
+
+          <article className="feature-card">
             <h3>Mejor para defender mejor la oferta</h3>
             <p>
               Si lo que te falla es como explicas el valor del proyecto, entra en{' '}
