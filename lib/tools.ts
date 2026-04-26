@@ -338,6 +338,16 @@ export const featuredGuides: FeaturedGuide[] = [
     relatedTool: 'Cuanto Cobrar Landing Page',
   },
   {
+    title: 'Estructura de una landing page que convierte',
+    href: 'https://www.cuantocobrarlandingpage.es/estructura-landing-page-que-convierte',
+    trackingHref:
+      'https://www.cuantocobrarlandingpage.es/estructura-landing-page-que-convierte?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
+    category: 'Landing pages',
+    description:
+      'Ordena hero, beneficios, prueba social, CTA, formulario y FAQ antes de convertir alcance en precio.',
+    relatedTool: 'Cuanto Cobrar Landing Page',
+  },
+  {
     title: 'Precio landing page freelance',
     href: 'https://www.cuantocobrarlandingpage.es/precio-landing-page-freelance',
     trackingHref:

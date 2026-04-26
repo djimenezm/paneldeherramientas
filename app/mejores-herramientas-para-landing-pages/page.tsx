@@ -265,6 +265,17 @@ export default function MejoresHerramientasLandingPagesPage() {
           </article>
 
           <article className="feature-card">
+            <h3>Mejor para ordenar la estructura</h3>
+            <p>
+              Antes de disenar bloques sueltos, revisa la{' '}
+              <a href="https://www.cuantocobrarlandingpage.es/estructura-landing-page-que-convierte">
+                estructura de una landing page que convierte
+              </a>{' '}
+              para alinear hero, beneficios, prueba social, CTA y formulario.
+            </p>
+          </article>
+
+          <article className="feature-card">
             <h3>Mejor para presupuestos mas amplios</h3>
             <p>
               Si la landing forma parte de un proyecto mayor o de una propuesta mas completa, te
