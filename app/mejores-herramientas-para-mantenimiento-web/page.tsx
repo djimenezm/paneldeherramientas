@@ -266,6 +266,17 @@ export default function MejoresHerramientasMantenimientoWebPage() {
           </article>
 
           <article className="feature-card">
+            <h3>Mejor para cerrar condiciones por escrito</h3>
+            <p>
+              Cuando ya tienes precio y alcance, revisa la guia de{' '}
+              <a href="https://www.mantenimientowebmensual.es/contrato-mantenimiento-web-mensual">
+                contrato de mantenimiento web mensual
+              </a>{' '}
+              antes de activar el servicio.
+            </p>
+          </article>
+
+          <article className="feature-card">
             <h3>Mejor para servicios concretos relacionados</h3>
             <p>
               Si vendes una landing como proyecto cerrado y luego quieres transformarla en cuota,

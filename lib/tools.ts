@@ -268,6 +268,16 @@ export const featuredGuides: FeaturedGuide[] = [
     relatedTool: 'Mantenimiento Web Mensual',
   },
   {
+    title: 'Contrato de mantenimiento web mensual',
+    href: 'https://www.mantenimientowebmensual.es/contrato-mantenimiento-web-mensual',
+    trackingHref:
+      'https://www.mantenimientowebmensual.es/contrato-mantenimiento-web-mensual?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
+    category: 'Mantenimiento',
+    description:
+      'Ordena alcance, horas, soporte, urgencias, extras y cancelacion antes de activar una cuota mensual.',
+    relatedTool: 'Mantenimiento Web Mensual',
+  },
+  {
     title: 'Ejemplo de presupuesto de landing page',
     href: 'https://www.cuantocobrarlandingpage.es/ejemplo-presupuesto-landing-page',
     trackingHref:
