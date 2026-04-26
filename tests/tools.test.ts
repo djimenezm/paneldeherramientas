@@ -17,7 +17,7 @@ describe('tools registry', () => {
   });
 
   it('links the featured guides to the active ecosystem domains', () => {
-    expect(featuredGuides).toHaveLength(14);
+    expect(featuredGuides).toHaveLength(15);
 
     featuredGuides.forEach((guide) => {
       expect(guide.href.startsWith('https://www.')).toBe(true);

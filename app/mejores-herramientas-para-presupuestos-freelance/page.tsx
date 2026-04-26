@@ -239,6 +239,17 @@ export default function MejoresHerramientasPresupuestosFreelancePage() {
           </article>
 
           <article className="feature-card">
+            <h3>Mejor para estimar horas antes de cerrar precio</h3>
+            <p>
+              Antes de convertir esfuerzo en importe, revisa la guia sobre{' '}
+              <a href="https://www.cuantopresupuestar.es/como-calcular-horas-proyecto-freelance">
+                como calcular horas de un proyecto freelance
+              </a>
+              . Es util para no olvidar reuniones, gestion, revisiones, pruebas y buffer.
+            </p>
+          </article>
+
+          <article className="feature-card">
             <h3>Mejor para tener una estructura reutilizable</h3>
             <p>
               Usa la{' '}

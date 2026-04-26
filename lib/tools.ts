@@ -228,6 +228,16 @@ export const featuredGuides: FeaturedGuide[] = [
     relatedTool: 'Cuanto Presupuestar',
   },
   {
+    title: 'Como calcular horas de un proyecto freelance',
+    href: 'https://www.cuantopresupuestar.es/como-calcular-horas-proyecto-freelance',
+    trackingHref:
+      'https://www.cuantopresupuestar.es/como-calcular-horas-proyecto-freelance?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
+    category: 'Presupuestos',
+    description:
+      'Estima fases, reuniones, gestion, revisiones, pruebas y buffer antes de convertir esfuerzo en precio.',
+    relatedTool: 'Cuanto Presupuestar',
+  },
+  {
     title: 'Presupuesto de desarrollo web freelance',
     href: 'https://www.cuantopresupuestar.es/presupuesto-desarrollo-web-freelance',
     trackingHref:
