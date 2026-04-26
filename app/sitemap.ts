@@ -8,6 +8,7 @@ const routes = [
   '/mejores-herramientas-para-presupuestos-freelance',
   '/mejores-herramientas-para-mantenimiento-web',
   '/mejores-herramientas-para-landing-pages',
+  '/mejores-herramientas-para-facturacion-autonomos',
   '/aviso-legal',
   '/privacidad',
   '/cookies',

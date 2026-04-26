@@ -163,6 +163,9 @@ export default function RecursosParaAutonomosPage() {
               <Link href="/mejores-herramientas-para-mantenimiento-web" className="tool-link">
                 Ver herramientas para mantenimiento
               </Link>
+              <Link href="/mejores-herramientas-para-facturacion-autonomos" className="tool-link">
+                Ver herramientas para facturacion
+              </Link>
             </div>
           </div>
 
@@ -315,6 +318,9 @@ export default function RecursosParaAutonomosPage() {
             </Link>
             <Link href="/mejores-herramientas-para-mantenimiento-web" className="tool-link">
               Ver herramientas para mantenimiento
+            </Link>
+            <Link href="/mejores-herramientas-para-facturacion-autonomos" className="tool-link">
+              Ver herramientas para facturacion
             </Link>
           </div>
         </div>

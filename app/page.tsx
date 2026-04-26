@@ -170,6 +170,9 @@ export default function HomePage() {
             <Link href="/mejores-herramientas-para-landing-pages" className="tool-link">
               Ver herramientas para landing pages
             </Link>
+            <Link href="/mejores-herramientas-para-facturacion-autonomos" className="tool-link">
+              Ver herramientas para facturacion
+            </Link>
           </div>
         </div>
       </section>
