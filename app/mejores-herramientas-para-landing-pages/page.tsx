@@ -243,6 +243,17 @@ export default function MejoresHerramientasLandingPagesPage() {
           </article>
 
           <article className="feature-card">
+            <h3>Mejor para decidir alcance</h3>
+            <p>
+              Si el cliente duda entre una landing y una web completa, revisa{' '}
+              <a href="https://www.cuantocobrarlandingpage.es/landing-page-vs-pagina-web">
+                landing page vs pagina web
+              </a>{' '}
+              antes de presupuestar.
+            </p>
+          </article>
+
+          <article className="feature-card">
             <h3>Mejor para presupuestos mas amplios</h3>
             <p>
               Si la landing forma parte de un proyecto mayor o de una propuesta mas completa, te

@@ -288,6 +288,16 @@ export const featuredGuides: FeaturedGuide[] = [
     relatedTool: 'Cuanto Cobrar Landing Page',
   },
   {
+    title: 'Landing page vs pagina web',
+    href: 'https://www.cuantocobrarlandingpage.es/landing-page-vs-pagina-web',
+    trackingHref:
+      'https://www.cuantocobrarlandingpage.es/landing-page-vs-pagina-web?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
+    category: 'Landing pages',
+    description:
+      'Decide si el cliente necesita una landing, una web completa o un proyecto por fases antes de presupuestar.',
+    relatedTool: 'Cuanto Cobrar Landing Page',
+  },
+  {
     title: 'Precio landing page freelance',
     href: 'https://www.cuantocobrarlandingpage.es/precio-landing-page-freelance',
     trackingHref:
