@@ -178,6 +178,16 @@ export const pricingWorkflow: PricingWorkflowStep[] = [
 
 export const featuredGuides: FeaturedGuide[] = [
   {
+    title: 'Cuánto facturar para ganar 1500 euros netos',
+    href: 'https://www.cuantofacturar.es/cuanto-facturar-autonomo-1500-euros',
+    trackingHref:
+      'https://www.cuantofacturar.es/cuanto-facturar-autonomo-1500-euros?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
+    category: 'Facturación',
+    description:
+      'Convierte un primer objetivo neto en facturación mensual, tarifa por hora y suelo defendible.',
+    relatedTool: 'Cuanto Facturar',
+  },
+  {
     title: 'Cuánto facturar para ganar 3000 euros netos',
     href: 'https://www.cuantofacturar.es/cuanto-facturar-autonomo-3000-euros',
     trackingHref:
@@ -186,6 +196,16 @@ export const featuredGuides: FeaturedGuide[] = [
     description:
       'Convierte un objetivo neto alto en facturación mensual, tarifa por hora y filtro para aceptar proyectos.',
     relatedTool: 'Cuanto Facturar',
+  },
+  {
+    title: 'Ejemplo de presupuesto freelance',
+    href: 'https://www.cuantopresupuestar.es/ejemplo-presupuesto-freelance',
+    trackingHref:
+      'https://www.cuantopresupuestar.es/ejemplo-presupuesto-freelance?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
+    category: 'Presupuestos',
+    description:
+      'Mira una estructura práctica para presentar alcance, entregables, precio, pagos y exclusiones.',
+    relatedTool: 'Cuanto Presupuestar',
   },
   {
     title: 'Presupuesto de desarrollo web freelance',
@@ -198,6 +218,16 @@ export const featuredGuides: FeaturedGuide[] = [
     relatedTool: 'Cuanto Presupuestar',
   },
   {
+    title: 'Qué incluye un mantenimiento web mensual',
+    href: 'https://www.mantenimientowebmensual.es/que-incluye-mantenimiento-web',
+    trackingHref:
+      'https://www.mantenimientowebmensual.es/que-incluye-mantenimiento-web?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
+    category: 'Mantenimiento',
+    description:
+      'Separa tareas incluidas, soporte, límites y extras antes de vender una cuota mensual.',
+    relatedTool: 'Mantenimiento Web Mensual',
+  },
+  {
     title: 'Paquetes de mantenimiento web',
     href: 'https://www.mantenimientowebmensual.es/paquetes-mantenimiento-web',
     trackingHref:
@@ -206,6 +236,16 @@ export const featuredGuides: FeaturedGuide[] = [
     description:
       'Estructura planes básico, profesional y avanzado con límites claros y extras fuera de cuota.',
     relatedTool: 'Mantenimiento Web Mensual',
+  },
+  {
+    title: 'Ejemplo de presupuesto de landing page',
+    href: 'https://www.cuantocobrarlandingpage.es/ejemplo-presupuesto-landing-page',
+    trackingHref:
+      'https://www.cuantocobrarlandingpage.es/ejemplo-presupuesto-landing-page?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
+    category: 'Landing pages',
+    description:
+      'Presenta alcance, secciones, integraciones, revisiones, precio e IVA sin dejar huecos.',
+    relatedTool: 'Cuanto Cobrar Landing Page',
   },
   {
     title: 'Precio landing page freelance',
