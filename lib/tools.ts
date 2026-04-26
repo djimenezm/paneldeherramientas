@@ -208,6 +208,16 @@ export const featuredGuides: FeaturedGuide[] = [
     relatedTool: 'Cuanto Facturar',
   },
   {
+    title: 'Tabla para saber cuanto facturar como autonomo',
+    href: 'https://www.cuantofacturar.es/tabla-cuanto-facturar-autonomo',
+    trackingHref:
+      'https://www.cuantofacturar.es/tabla-cuanto-facturar-autonomo?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
+    category: 'Facturación',
+    description:
+      'Compara objetivos netos de 1500, 2000, 2500 y 3000 euros antes de calcular tu caso real.',
+    relatedTool: 'Cuanto Facturar',
+  },
+  {
     title: 'Ejemplo de presupuesto freelance',
     href: 'https://www.cuantopresupuestar.es/ejemplo-presupuesto-freelance',
     trackingHref:

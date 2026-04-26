@@ -240,6 +240,17 @@ export default function MejoresHerramientasFacturacionAutonomosPage() {
           </article>
 
           <article className="feature-card">
+            <h3>Mejor para comparar objetivos netos</h3>
+            <p>
+              Si aun estas eligiendo meta mensual, usa la{' '}
+              <a href="https://www.cuantofacturar.es/tabla-cuanto-facturar-autonomo">
+                tabla para saber cuanto facturar como autonomo
+              </a>{' '}
+              y salta despues a la guia concreta de 1500, 2000, 2500 o 3000 euros netos.
+            </p>
+          </article>
+
+          <article className="feature-card">
             <h3>Mejor para objetivos netos concretos</h3>
             <p>
               Si ya tienes una meta intermedia, revisa{' '}
