@@ -262,6 +262,18 @@ export default function MejoresHerramientasFacturacionAutonomosPage() {
           </article>
 
           <article className="feature-card">
+            <h3>Mejor para convertir horas en jornadas</h3>
+            <p>
+              Si no vendes horas sueltas sino dias, workshops o bloques intensivos, revisa la guia
+              de{' '}
+              <a href="https://www.cuantofacturar.es/tarifa-diaria-freelance">
+                tarifa diaria freelance
+              </a>{' '}
+              antes de cerrar una jornada.
+            </p>
+          </article>
+
+          <article className="feature-card">
             <h3>Mejor para elegir software despues</h3>
             <p>
               Si ya tienes una referencia mensual y quieres comparar opciones, entra en{' '}

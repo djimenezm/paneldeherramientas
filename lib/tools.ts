@@ -218,6 +218,16 @@ export const featuredGuides: FeaturedGuide[] = [
     relatedTool: 'Cuanto Facturar',
   },
   {
+    title: 'Tarifa diaria freelance',
+    href: 'https://www.cuantofacturar.es/tarifa-diaria-freelance',
+    trackingHref:
+      'https://www.cuantofacturar.es/tarifa-diaria-freelance?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
+    category: 'Facturación',
+    description:
+      'Convierte tu tarifa por hora en jornada, workshop o bloque de trabajo sin regalar agenda.',
+    relatedTool: 'Cuanto Facturar',
+  },
+  {
     title: 'Ejemplo de presupuesto freelance',
     href: 'https://www.cuantopresupuestar.es/ejemplo-presupuesto-freelance',
     trackingHref:
