@@ -288,6 +288,16 @@ export const featuredGuides: FeaturedGuide[] = [
     relatedTool: 'Mantenimiento Web Mensual',
   },
   {
+    title: 'Mantenimiento WordPress basico, profesional y avanzado',
+    href: 'https://www.mantenimientowebmensual.es/mantenimiento-wordpress-basico-profesional-avanzado',
+    trackingHref:
+      'https://www.mantenimientowebmensual.es/mantenimiento-wordpress-basico-profesional-avanzado?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
+    category: 'Mantenimiento',
+    description:
+      'Separa planes WordPress con soporte, horas, prioridad, limites y extras antes de fijar cuota.',
+    relatedTool: 'Mantenimiento Web Mensual',
+  },
+  {
     title: 'Contrato de mantenimiento web mensual',
     href: 'https://www.mantenimientowebmensual.es/contrato-mantenimiento-web-mensual',
     trackingHref:

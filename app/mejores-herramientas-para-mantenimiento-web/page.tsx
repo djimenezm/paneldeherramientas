@@ -255,6 +255,17 @@ export default function MejoresHerramientasMantenimientoWebPage() {
           </article>
 
           <article className="feature-card">
+            <h3>Mejor para separar planes WordPress</h3>
+            <p>
+              Si quieres vender niveles claros, revisa{' '}
+              <a href="https://www.mantenimientowebmensual.es/mantenimiento-wordpress-basico-profesional-avanzado">
+                mantenimiento WordPress basico, profesional y avanzado
+              </a>{' '}
+              antes de prometer soporte sin limites.
+            </p>
+          </article>
+
+          <article className="feature-card">
             <h3>Mejor para entregar un recurso inicial</h3>
             <p>
               Si quieres estructurar mejor la oferta o el servicio, apóyate en el{' '}
