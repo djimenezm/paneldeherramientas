@@ -20,6 +20,7 @@ export default function Footer() {
           <Link href="/recursos-para-autonomos">Autonomos</Link>
           <Link href="/mejores-herramientas-para-presupuestos-freelance">Presupuestos</Link>
           <Link href="/mejores-herramientas-para-mantenimiento-web">Mantenimiento</Link>
+          <Link href="/mejores-herramientas-para-landing-pages">Landing pages</Link>
           <Link href="/aviso-legal">Aviso legal</Link>
           <Link href="/privacidad">Privacidad</Link>
           <Link href="/cookies">Cookies</Link>

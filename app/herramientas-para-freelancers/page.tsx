@@ -163,6 +163,9 @@ export default function HerramientasParaFreelancersPage() {
             <Link href="/mejores-herramientas-para-presupuestos-freelance" className="tool-link">
               Ver herramientas para presupuestos
             </Link>
+            <Link href="/mejores-herramientas-para-landing-pages" className="tool-link">
+              Ver herramientas para landing pages
+            </Link>
           </div>
         </div>
 
@@ -326,6 +329,9 @@ export default function HerramientasParaFreelancersPage() {
           <div className="guide-cta">
             <Link href="/#herramientas" className="tool-link">
               Volver al directorio
+            </Link>
+            <Link href="/mejores-herramientas-para-landing-pages" className="tool-link">
+              Ver herramientas para landing pages
             </Link>
           </div>
         </div>

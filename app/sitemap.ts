@@ -7,6 +7,7 @@ const routes = [
   '/recursos-para-autonomos',
   '/mejores-herramientas-para-presupuestos-freelance',
   '/mejores-herramientas-para-mantenimiento-web',
+  '/mejores-herramientas-para-landing-pages',
   '/aviso-legal',
   '/privacidad',
   '/cookies',

@@ -167,6 +167,9 @@ export default function HomePage() {
             <Link href="/mejores-herramientas-para-mantenimiento-web" className="tool-link">
               Ver herramientas para mantenimiento web
             </Link>
+            <Link href="/mejores-herramientas-para-landing-pages" className="tool-link">
+              Ver herramientas para landing pages
+            </Link>
           </div>
         </div>
       </section>
