@@ -240,6 +240,17 @@ export default function MejoresHerramientasFacturacionAutonomosPage() {
           </article>
 
           <article className="feature-card">
+            <h3>Mejor para objetivos netos concretos</h3>
+            <p>
+              Si ya tienes una meta intermedia, revisa{' '}
+              <a href="https://www.cuantofacturar.es/cuanto-facturar-autonomo-2500-euros">
+                cuanto facturar para ganar 2500 euros netos
+              </a>{' '}
+              y comparala con los objetivos de 1500, 2000 o 3000 euros.
+            </p>
+          </article>
+
+          <article className="feature-card">
             <h3>Mejor para elegir software despues</h3>
             <p>
               Si ya tienes una referencia mensual y quieres comparar opciones, entra en{' '}

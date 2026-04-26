@@ -188,6 +188,16 @@ export const featuredGuides: FeaturedGuide[] = [
     relatedTool: 'Cuanto Facturar',
   },
   {
+    title: 'Cuánto facturar para ganar 2500 euros netos',
+    href: 'https://www.cuantofacturar.es/cuanto-facturar-autonomo-2500-euros',
+    trackingHref:
+      'https://www.cuantofacturar.es/cuanto-facturar-autonomo-2500-euros?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
+    category: 'Facturación',
+    description:
+      'Convierte una meta intermedia en facturación mensual, tarifa por hora y filtro para revisar tus precios.',
+    relatedTool: 'Cuanto Facturar',
+  },
+  {
     title: 'Cuánto facturar para ganar 3000 euros netos',
     href: 'https://www.cuantofacturar.es/cuanto-facturar-autonomo-3000-euros',
     trackingHref:
