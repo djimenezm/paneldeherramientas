@@ -228,6 +228,16 @@ export const featuredGuides: FeaturedGuide[] = [
     relatedTool: 'Mantenimiento Web Mensual',
   },
   {
+    title: 'Mantenimiento web mensual vs bolsa de horas',
+    href: 'https://www.mantenimientowebmensual.es/mantenimiento-web-vs-bolsa-horas',
+    trackingHref:
+      'https://www.mantenimientowebmensual.es/mantenimiento-web-vs-bolsa-horas?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
+    category: 'Mantenimiento',
+    description:
+      'Decide cuándo vender cuota mensual, bolsa de horas o proyecto cerrado sin mezclar alcances.',
+    relatedTool: 'Mantenimiento Web Mensual',
+  },
+  {
     title: 'Paquetes de mantenimiento web',
     href: 'https://www.mantenimientowebmensual.es/paquetes-mantenimiento-web',
     trackingHref:
