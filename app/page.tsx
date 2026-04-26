@@ -83,6 +83,17 @@ export default function HomePage() {
               <li>Herramientas pequenas, especializadas y pensadas para freelancers y autonomos.</li>
               <li>Actualizado conforme se publican nuevas calculadoras y guias.</li>
             </ul>
+            <div className="guide-cta">
+              <Link href="/mejores-herramientas-para-facturacion-autonomos" className="tool-link">
+                Empezar por facturacion
+              </Link>
+              <Link
+                href="/mejores-herramientas-para-presupuestos-freelance"
+                className="tool-link"
+              >
+                Empezar por presupuestos
+              </Link>
+            </div>
           </div>
 
           <aside className="hero-summary" aria-label="Resumen rapido del panel">
@@ -106,6 +117,77 @@ export default function HomePage() {
       </section>
 
       <section className="section">
+        <div className="container section-heading">
+          <span className="eyebrow">Empieza por aqui</span>
+          <h2>Elige la rama segun la pregunta que quieres resolver hoy</h2>
+          <p className="section-lead">
+            Si vienes con una duda concreta, no hace falta recorrer todo el panel. Estas cuatro
+            rutas te llevan a la parte del ecosistema que mejor encaja con tu bloqueo principal.
+          </p>
+        </div>
+        <div className="container quick-start-grid" aria-label="Rutas principales del ecosistema">
+          <article className="quick-start-card">
+            <span className="route-kicker">Facturacion</span>
+            <h3>No se cuanto deberia facturar al mes</h3>
+            <p>
+              Empieza por la rama de facturacion si tu problema principal es entender cuota, IRPF,
+              IVA y una cifra mensual defendible.
+            </p>
+            <div className="guide-cta">
+              <Link href="/mejores-herramientas-para-facturacion-autonomos" className="tool-link">
+                Ver herramientas para facturacion
+              </Link>
+            </div>
+          </article>
+
+          <article className="quick-start-card">
+            <span className="route-kicker">Presupuestos</span>
+            <h3>Quiero aterrizar mejor un proyecto cerrado</h3>
+            <p>
+              Si vendes proyectos con alcance, entregables y margen, esta ruta te lleva a las
+              piezas mas utiles para presupuestar mejor.
+            </p>
+            <div className="guide-cta">
+              <Link
+                href="/mejores-herramientas-para-presupuestos-freelance"
+                className="tool-link"
+              >
+                Ver herramientas para presupuestos
+              </Link>
+            </div>
+          </article>
+
+          <article className="quick-start-card">
+            <span className="route-kicker">Mantenimiento</span>
+            <h3>Quiero poner cuota a soporte o mantenimiento</h3>
+            <p>
+              Usa esta rama si lo que vendes es recurrente y necesitas una cuota mensual mas clara
+              para soporte, mantenimiento o bolsas de horas.
+            </p>
+            <div className="guide-cta">
+              <Link href="/mejores-herramientas-para-mantenimiento-web" className="tool-link">
+                Ver herramientas para mantenimiento
+              </Link>
+            </div>
+          </article>
+
+          <article className="quick-start-card">
+            <span className="route-kicker">Landing pages</span>
+            <h3>Solo quiero saber cuanto cobrar una landing</h3>
+            <p>
+              Si tu servicio es muy concreto y no quieres mezclarlo con proyectos mas grandes,
+              esta ruta te baja rapido al caso de una landing page.
+            </p>
+            <div className="guide-cta">
+              <Link href="/mejores-herramientas-para-landing-pages" className="tool-link">
+                Ver herramientas para landing pages
+              </Link>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section className="section alt">
         <div className="container feature-grid" aria-label="Que puedes resolver desde el panel">
           <article className="feature-card">
             <h2>Precios de trabajo recurrente</h2>

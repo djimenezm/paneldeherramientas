@@ -299,7 +299,8 @@ h3 {
 }
 
 .feature-grid,
-.tools-grid {
+.tools-grid,
+.quick-start-grid {
   display: grid;
   gap: 1rem;
 }
@@ -312,7 +313,12 @@ h3 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.quick-start-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .feature-card,
+.quick-start-card,
 .tool-card,
 .faq-item,
 .conversion-step {
@@ -323,12 +329,14 @@ h3 {
 }
 
 .feature-card,
+.quick-start-card,
 .faq-item,
 .conversion-step {
   padding: 1.15rem;
 }
 
 .feature-card p,
+.quick-start-card p,
 .faq-item p,
 .conversion-step p,
 .tool-description,
@@ -414,6 +422,10 @@ h3 {
 .tool-link-disabled {
   background: #d9e8e3;
   color: #5a6c67;
+}
+
+.quick-start-card h3 {
+  margin-bottom: 0.6rem;
 }
 
 .launch-note {
@@ -618,6 +630,7 @@ h3 {
   .hero-panel,
   .article-layout,
   .feature-grid,
+  .quick-start-grid,
   .tools-grid,
   .routes-grid,
   .matrix-row {
