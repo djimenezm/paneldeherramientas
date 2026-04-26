@@ -1,6 +1,7 @@
 export type ToolItem = {
   name: string;
   href: string;
+  trackingHref: string;
   category: string;
   description: string;
   useCase: string;
@@ -15,6 +16,7 @@ export type ToolItem = {
 export type FeaturedGuide = {
   title: string;
   href: string;
+  trackingHref: string;
   category: string;
   description: string;
   relatedTool: string;
@@ -24,6 +26,8 @@ export const tools: ToolItem[] = [
   {
     name: 'Cuanto Facturar',
     href: 'https://www.cuantofacturar.es',
+    trackingHref:
+      'https://www.cuantofacturar.es?utm_source=paneldeherramientas&utm_medium=tool-directory&utm_campaign=tool_navigation',
     category: 'Facturacion',
     description:
       'Calculadora para estimar cuanto necesitas facturar al mes y que tarifa por hora encaja con tu objetivo neto.',
@@ -39,6 +43,8 @@ export const tools: ToolItem[] = [
   {
     name: 'Cuanto Presupuestar',
     href: 'https://www.cuantopresupuestar.es',
+    trackingHref:
+      'https://www.cuantopresupuestar.es?utm_source=paneldeherramientas&utm_medium=tool-directory&utm_campaign=tool_navigation',
     category: 'Presupuestos',
     description:
       'Herramienta para transformar un objetivo mensual y un alcance de trabajo en un presupuesto cerrado por proyecto.',
@@ -54,6 +60,8 @@ export const tools: ToolItem[] = [
   {
     name: 'Mantenimiento Web Mensual',
     href: 'https://www.mantenimientowebmensual.es',
+    trackingHref:
+      'https://www.mantenimientowebmensual.es?utm_source=paneldeherramientas&utm_medium=tool-directory&utm_campaign=tool_navigation',
     category: 'Retainers',
     description:
       'Calculadora para fijar una cuota mensual de mantenimiento web con horas incluidas, buffer y costes directos.',
@@ -69,6 +77,8 @@ export const tools: ToolItem[] = [
   {
     name: 'Cuanto Cobrar Landing Page',
     href: 'https://www.cuantocobrarlandingpage.es',
+    trackingHref:
+      'https://www.cuantocobrarlandingpage.es?utm_source=paneldeherramientas&utm_medium=tool-directory&utm_campaign=tool_navigation',
     category: 'Landing pages',
     description:
       'Calculadora especializada para poner precio a una landing page teniendo en cuenta secciones, integraciones, revisiones y copy.',
@@ -86,7 +96,9 @@ export const tools: ToolItem[] = [
 export const featuredGuides: FeaturedGuide[] = [
   {
     title: 'Cuanto facturar para ganar 3000 euros netos',
-    href: 'https://www.cuantofacturar.es/cuanto-facturar-autonomo-3000-euros?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
+    href: 'https://www.cuantofacturar.es/cuanto-facturar-autonomo-3000-euros',
+    trackingHref:
+      'https://www.cuantofacturar.es/cuanto-facturar-autonomo-3000-euros?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
     category: 'Facturacion',
     description:
       'Convierte un objetivo neto alto en facturacion mensual, tarifa por hora y filtro para aceptar proyectos.',
@@ -94,7 +106,9 @@ export const featuredGuides: FeaturedGuide[] = [
   },
   {
     title: 'Presupuesto de desarrollo web freelance',
-    href: 'https://www.cuantopresupuestar.es/presupuesto-desarrollo-web-freelance?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
+    href: 'https://www.cuantopresupuestar.es/presupuesto-desarrollo-web-freelance',
+    trackingHref:
+      'https://www.cuantopresupuestar.es/presupuesto-desarrollo-web-freelance?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
     category: 'Presupuestos',
     description:
       'Ordena alcance, hitos, revisiones, extras y margen antes de enviar una propuesta de desarrollo web.',
@@ -102,7 +116,9 @@ export const featuredGuides: FeaturedGuide[] = [
   },
   {
     title: 'Paquetes de mantenimiento web',
-    href: 'https://www.mantenimientowebmensual.es/paquetes-mantenimiento-web?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
+    href: 'https://www.mantenimientowebmensual.es/paquetes-mantenimiento-web',
+    trackingHref:
+      'https://www.mantenimientowebmensual.es/paquetes-mantenimiento-web?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
     category: 'Mantenimiento',
     description:
       'Estructura planes basico, profesional y avanzado con limites claros y extras fuera de cuota.',
@@ -110,7 +126,9 @@ export const featuredGuides: FeaturedGuide[] = [
   },
   {
     title: 'Precio landing page freelance',
-    href: 'https://www.cuantocobrarlandingpage.es/precio-landing-page-freelance?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
+    href: 'https://www.cuantocobrarlandingpage.es/precio-landing-page-freelance',
+    trackingHref:
+      'https://www.cuantocobrarlandingpage.es/precio-landing-page-freelance?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
     category: 'Landing pages',
     description:
       'Calcula y defiende el precio de una landing page segun alcance, copy, integraciones y revisiones.',

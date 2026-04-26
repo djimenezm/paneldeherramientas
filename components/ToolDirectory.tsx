@@ -110,7 +110,7 @@ export default function ToolDirectory() {
                 </ul>
 
                 {tool.isLive ? (
-                  <a className="tool-link" href={tool.href}>
+                  <a className="tool-link" href={tool.trackingHref}>
                     Abrir herramienta
                   </a>
                 ) : (

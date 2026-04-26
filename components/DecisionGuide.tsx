@@ -19,7 +19,7 @@ export default function DecisionGuide() {
               <span className="route-kicker">{tool.category}</span>
               <h3>{tool.primaryQuestion}</h3>
               <p>{tool.bestWhen}</p>
-              <a className="tool-link" href={tool.href}>
+              <a className="tool-link" href={tool.trackingHref}>
                 Ir a {tool.name}
               </a>
             </article>

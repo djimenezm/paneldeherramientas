@@ -254,7 +254,7 @@ export default function HomePage() {
               </div>
               <h3>{guide.title}</h3>
               <p>{guide.description}</p>
-              <a href={guide.href} className="tool-link">
+              <a href={guide.trackingHref} className="tool-link">
                 Abrir guia
               </a>
             </article>

@@ -7,9 +7,12 @@ describe('tools registry', () => {
     expect(pendingTools).toHaveLength(0);
   });
 
-  it('keeps every tool under https', () => {
+  it('keeps every tool canonical URL clean and under https', () => {
     tools.forEach((tool) => {
       expect(tool.href.startsWith('https://')).toBe(true);
+      expect(tool.href).not.toContain('?utm_');
+      expect(tool.trackingHref).toContain('utm_source=paneldeherramientas');
+      expect(tool.trackingHref).toContain('utm_medium=tool-directory');
     });
   });
 
@@ -18,6 +21,9 @@ describe('tools registry', () => {
 
     featuredGuides.forEach((guide) => {
       expect(guide.href.startsWith('https://www.')).toBe(true);
+      expect(guide.href).not.toContain('?utm_');
+      expect(guide.trackingHref).toContain('utm_source=paneldeherramientas');
+      expect(guide.trackingHref).toContain('utm_medium=hub-guide');
       expect(tools.some((tool) => tool.name === guide.relatedTool)).toBe(true);
     });
   });
