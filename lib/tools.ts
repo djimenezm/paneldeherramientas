@@ -12,6 +12,14 @@ export type ToolItem = {
   isLive: boolean;
 };
 
+export type FeaturedGuide = {
+  title: string;
+  href: string;
+  category: string;
+  description: string;
+  relatedTool: string;
+};
+
 export const tools: ToolItem[] = [
   {
     name: 'Cuanto Facturar',
@@ -72,6 +80,41 @@ export const tools: ToolItem[] = [
     tags: ['Landing page', 'Integraciones', 'Copywriting'],
     availability: 'Activa',
     isLive: true,
+  },
+];
+
+export const featuredGuides: FeaturedGuide[] = [
+  {
+    title: 'Cuanto facturar para ganar 3000 euros netos',
+    href: 'https://www.cuantofacturar.es/cuanto-facturar-autonomo-3000-euros',
+    category: 'Facturacion',
+    description:
+      'Convierte un objetivo neto alto en facturacion mensual, tarifa por hora y filtro para aceptar proyectos.',
+    relatedTool: 'Cuanto Facturar',
+  },
+  {
+    title: 'Presupuesto de desarrollo web freelance',
+    href: 'https://www.cuantopresupuestar.es/presupuesto-desarrollo-web-freelance',
+    category: 'Presupuestos',
+    description:
+      'Ordena alcance, hitos, revisiones, extras y margen antes de enviar una propuesta de desarrollo web.',
+    relatedTool: 'Cuanto Presupuestar',
+  },
+  {
+    title: 'Paquetes de mantenimiento web',
+    href: 'https://www.mantenimientowebmensual.es/paquetes-mantenimiento-web',
+    category: 'Mantenimiento',
+    description:
+      'Estructura planes basico, profesional y avanzado con limites claros y extras fuera de cuota.',
+    relatedTool: 'Mantenimiento Web Mensual',
+  },
+  {
+    title: 'Precio landing page freelance',
+    href: 'https://www.cuantocobrarlandingpage.es/precio-landing-page-freelance',
+    category: 'Landing pages',
+    description:
+      'Calcula y defiende el precio de una landing page segun alcance, copy, integraciones y revisiones.',
+    relatedTool: 'Cuanto Cobrar Landing Page',
   },
 ];
 

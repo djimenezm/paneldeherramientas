@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import ToolDirectory from '@/components/ToolDirectory';
 import { siteConfig } from '@/lib/site';
-import { liveTools, pendingTools, tools } from '@/lib/tools';
+import { featuredGuides, liveTools, pendingTools, tools } from '@/lib/tools';
 
 export default function HomePage() {
   const websiteSchema = {
@@ -27,6 +27,18 @@ export default function HomePage() {
       position: index + 1,
       name: tool.name,
       url: tool.href,
+    })),
+  };
+
+  const guideListSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Guias destacadas del ecosistema',
+    itemListElement: featuredGuides.map((guide, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: guide.title,
+      url: guide.href,
     })),
   };
 
@@ -54,6 +66,11 @@ export default function HomePage() {
         id="itemlist-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+      />
+      <Script
+        id="guide-list-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(guideListSchema) }}
       />
       <Script
         id="faq-schema"
@@ -216,6 +233,34 @@ export default function HomePage() {
       </section>
 
       <ToolDirectory />
+
+      <section className="section alt" id="guias-destacadas">
+        <div className="container section-heading">
+          <span className="eyebrow">Guias destacadas</span>
+          <h2>Rutas nuevas para profundizar despues de usar una calculadora</h2>
+          <p className="section-lead">
+            Estas paginas atacan dudas muy concretas y conectan cada herramienta con una siguiente
+            lectura practica. Son buenos puntos de entrada si llegas desde buscadores o si quieres
+            pasar de la cifra a una decision.
+          </p>
+        </div>
+
+        <div className="container guide-grid" aria-label="Guias destacadas del ecosistema">
+          {featuredGuides.map((guide) => (
+            <article className="guide-card" key={guide.href}>
+              <div className="tool-meta">
+                <span className="tool-category">{guide.category}</span>
+                <span className="guide-tool">{guide.relatedTool}</span>
+              </div>
+              <h3>{guide.title}</h3>
+              <p>{guide.description}</p>
+              <a href={guide.href} className="tool-link">
+                Abrir guia
+              </a>
+            </article>
+          ))}
+        </div>
+      </section>
 
       <DecisionGuide />
 

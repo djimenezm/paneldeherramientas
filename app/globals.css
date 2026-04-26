@@ -300,7 +300,8 @@ h3 {
 
 .feature-grid,
 .tools-grid,
-.quick-start-grid {
+.quick-start-grid,
+.guide-grid {
   display: grid;
   gap: 1rem;
 }
@@ -317,7 +318,12 @@ h3 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.guide-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .feature-card,
+.guide-card,
 .quick-start-card,
 .tool-card,
 .faq-item,
@@ -351,6 +357,37 @@ h3 {
   display: grid;
   gap: 0.9rem;
   padding: 1.25rem;
+}
+
+.guide-card {
+  display: grid;
+  gap: 0.85rem;
+  padding: 1.15rem;
+  background:
+    linear-gradient(150deg, rgba(15, 118, 110, 0.08), rgba(255, 255, 255, 0) 55%),
+    var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+
+.guide-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.guide-tool {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  background: #f3f8f6;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 700;
 }
 
 .tool-meta {
@@ -631,6 +668,7 @@ h3 {
   .article-layout,
   .feature-grid,
   .quick-start-grid,
+  .guide-grid,
   .tools-grid,
   .routes-grid,
   .matrix-row {
