@@ -276,6 +276,17 @@ export default function MejoresHerramientasLandingPagesPage() {
           </article>
 
           <article className="feature-card">
+            <h3>Mejor para captar leads</h3>
+            <p>
+              Si la landing tiene que convertir visitas en contactos, revisa{' '}
+              <a href="https://www.cuantocobrarlandingpage.es/landing-page-para-captar-leads">
+                landing page para captar leads
+              </a>{' '}
+              para definir oferta, formulario, seguimiento e integraciones antes de cerrar precio.
+            </p>
+          </article>
+
+          <article className="feature-card">
             <h3>Mejor para presupuestos mas amplios</h3>
             <p>
               Si la landing forma parte de un proyecto mayor o de una propuesta mas completa, te

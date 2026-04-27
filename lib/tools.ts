@@ -378,6 +378,16 @@ export const featuredGuides: FeaturedGuide[] = [
     relatedTool: 'Cuanto Cobrar Landing Page',
   },
   {
+    title: 'Landing page para captar leads',
+    href: 'https://www.cuantocobrarlandingpage.es/landing-page-para-captar-leads',
+    trackingHref:
+      'https://www.cuantocobrarlandingpage.es/landing-page-para-captar-leads?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
+    category: 'Landing pages',
+    description:
+      'Define oferta, formulario, lead magnet, seguimiento e integraciones antes de cerrar precio.',
+    relatedTool: 'Cuanto Cobrar Landing Page',
+  },
+  {
     title: 'Precio landing page freelance',
     href: 'https://www.cuantocobrarlandingpage.es/precio-landing-page-freelance',
     trackingHref:
