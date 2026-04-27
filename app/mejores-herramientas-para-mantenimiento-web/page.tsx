@@ -244,6 +244,17 @@ export default function MejoresHerramientasMantenimientoWebPage() {
           </article>
 
           <article className="feature-card">
+            <h3>Mejor para clientes pyme</h3>
+            <p>
+              Si el servicio es para una empresa pequena, revisa{' '}
+              <a href="https://www.mantenimientowebmensual.es/mantenimiento-web-para-pymes">
+                mantenimiento web para pymes
+              </a>{' '}
+              para separar soporte, seguridad, urgencias, horas incluidas y trabajos fuera de cuota.
+            </p>
+          </article>
+
+          <article className="feature-card">
             <h3>Mejor para afinar WordPress como caso comun</h3>
             <p>
               Usa la guia de{' '}

@@ -308,6 +308,16 @@ export const featuredGuides: FeaturedGuide[] = [
     relatedTool: 'Mantenimiento Web Mensual',
   },
   {
+    title: 'Mantenimiento web para pymes',
+    href: 'https://www.mantenimientowebmensual.es/mantenimiento-web-para-pymes',
+    trackingHref:
+      'https://www.mantenimientowebmensual.es/mantenimiento-web-para-pymes?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
+    category: 'Mantenimiento',
+    description:
+      'Define soporte, seguridad, horas incluidas, urgencias y extras para una pyme antes de cerrar cuota.',
+    relatedTool: 'Mantenimiento Web Mensual',
+  },
+  {
     title: 'Mantenimiento web mensual vs bolsa de horas',
     href: 'https://www.mantenimientowebmensual.es/mantenimiento-web-vs-bolsa-horas',
     trackingHref:
