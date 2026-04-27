@@ -408,6 +408,16 @@ export const featuredGuides: FeaturedGuide[] = [
     relatedTool: 'Cuanto Cobrar Landing Page',
   },
   {
+    title: 'Landing page para Google Ads',
+    href: 'https://www.cuantocobrarlandingpage.es/landing-page-para-google-ads',
+    trackingHref:
+      'https://www.cuantocobrarlandingpage.es/landing-page-para-google-ads?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
+    category: 'Landing pages',
+    description:
+      'Alinea anuncio, mensaje, CTA, velocidad, tracking y conversion antes de presupuestar trafico de pago.',
+    relatedTool: 'Cuanto Cobrar Landing Page',
+  },
+  {
     title: 'Precio landing page freelance',
     href: 'https://www.cuantocobrarlandingpage.es/precio-landing-page-freelance',
     trackingHref:

@@ -287,6 +287,17 @@ export default function MejoresHerramientasLandingPagesPage() {
           </article>
 
           <article className="feature-card">
+            <h3>Mejor para trafico de pago</h3>
+            <p>
+              Si vas a enviar clics de anuncios, revisa la guia de{' '}
+              <a href="https://www.cuantocobrarlandingpage.es/landing-page-para-google-ads">
+                landing page para Google Ads
+              </a>{' '}
+              para alinear anuncio, mensaje, CTA, tracking y precio del proyecto.
+            </p>
+          </article>
+
+          <article className="feature-card">
             <h3>Mejor para presupuestos mas amplios</h3>
             <p>
               Si la landing forma parte de un proyecto mayor o de una propuesta mas completa, te
