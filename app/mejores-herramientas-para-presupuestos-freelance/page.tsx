@@ -294,6 +294,17 @@ export default function MejoresHerramientasPresupuestosFreelancePage() {
           </article>
 
           <article className="feature-card">
+            <h3>Mejor para cerrar condiciones de pago</h3>
+            <p>
+              Antes de enviar la propuesta, revisa{' '}
+              <a href="https://www.cuantopresupuestar.es/condiciones-pago-presupuesto-freelance">
+                condiciones de pago en presupuesto freelance
+              </a>{' '}
+              para dejar claros anticipo, hitos, plazos y entrega final.
+            </p>
+          </article>
+
+          <article className="feature-card">
             <h3>Mejor para defender mejor la oferta</h3>
             <p>
               Si lo que te falla es como explicas el valor del proyecto, entra en{' '}

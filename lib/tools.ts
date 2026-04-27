@@ -268,6 +268,16 @@ export const featuredGuides: FeaturedGuide[] = [
     relatedTool: 'Cuanto Presupuestar',
   },
   {
+    title: 'Condiciones de pago en presupuesto freelance',
+    href: 'https://www.cuantopresupuestar.es/condiciones-pago-presupuesto-freelance',
+    trackingHref:
+      'https://www.cuantopresupuestar.es/condiciones-pago-presupuesto-freelance?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
+    category: 'Presupuestos',
+    description:
+      'Define anticipo, hitos, plazos de pago y entrega final antes de enviar una propuesta.',
+    relatedTool: 'Cuanto Presupuestar',
+  },
+  {
     title: 'Presupuesto por fases freelance',
     href: 'https://www.cuantopresupuestar.es/presupuesto-por-fases-freelance',
     trackingHref:
