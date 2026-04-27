@@ -10,6 +10,7 @@ export default function Header() {
 
         <nav className="nav" aria-label="Navegación principal">
           <Link href="/#herramientas">Herramientas</Link>
+          <Link href="/precios-freelance">Precios</Link>
           <Link href="/calculadoras-para-freelancers">Calculadoras</Link>
           <Link href="/#guias-destacadas">Guías</Link>
           <Link href="/herramientas-para-freelancers">Freelancers</Link>

@@ -7,6 +7,7 @@ describe('sitemap', () => {
 
     urls.forEach((url) => expect(url.origin).toBe('https://www.paneldeherramientas.es'));
     expect(paths).toContain('/');
+    expect(paths).toContain('/precios-freelance');
     expect(paths).toContain('/calculadoras-para-freelancers');
     expect(paths).toContain('/herramientas-para-freelancers');
     expect(paths).toContain('/recursos-para-autonomos');

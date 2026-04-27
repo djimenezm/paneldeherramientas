@@ -3,6 +3,7 @@ import { getSiteUrl } from '@/lib/site';
 
 const routes = [
   '/',
+  '/precios-freelance',
   '/calculadoras-para-freelancers',
   '/herramientas-para-freelancers',
   '/recursos-para-autonomos',

@@ -118,6 +118,9 @@ export default function HomePage() {
               <li>Actualizado conforme se publican nuevas calculadoras y guías.</li>
             </ul>
             <div className="guide-cta">
+              <Link href="/precios-freelance" className="tool-link">
+                Ver guia de precios freelance
+              </Link>
               <Link href="/calculadoras-para-freelancers" className="tool-link">
                 Ver calculadoras para freelancers
               </Link>
@@ -331,6 +334,9 @@ export default function HomePage() {
             encontrar la que mejor te sirve en cada momento.
           </div>
           <div className="guide-cta">
+            <Link href="/precios-freelance" className="tool-link">
+              Ver guia de precios freelance
+            </Link>
             <Link href="/calculadoras-para-freelancers" className="tool-link">
               Ver calculadoras para freelancers
             </Link>
