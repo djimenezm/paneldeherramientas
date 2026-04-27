@@ -248,6 +248,16 @@ export const featuredGuides: FeaturedGuide[] = [
     relatedTool: 'Cuanto Presupuestar',
   },
   {
+    title: 'Presupuesto por fases freelance',
+    href: 'https://www.cuantopresupuestar.es/presupuesto-por-fases-freelance',
+    trackingHref:
+      'https://www.cuantopresupuestar.es/presupuesto-por-fases-freelance?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
+    category: 'Presupuestos',
+    description:
+      'Divide un proyecto en fases, hitos, pagos y revisiones para avanzar sin regalar margen.',
+    relatedTool: 'Cuanto Presupuestar',
+  },
+  {
     title: 'Como calcular horas de un proyecto freelance',
     href: 'https://www.cuantopresupuestar.es/como-calcular-horas-proyecto-freelance',
     trackingHref:

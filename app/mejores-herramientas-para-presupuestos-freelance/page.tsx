@@ -272,6 +272,17 @@ export default function MejoresHerramientasPresupuestosFreelancePage() {
           </article>
 
           <article className="feature-card">
+            <h3>Mejor para dividir proyectos largos en hitos</h3>
+            <p>
+              Si el alcance tiene partes claras y partes todavia abiertas, usa la guia de{' '}
+              <a href="https://www.cuantopresupuestar.es/presupuesto-por-fases-freelance">
+                presupuesto por fases freelance
+              </a>{' '}
+              para separar entregables, pagos, revisiones y extras sin regalar margen.
+            </p>
+          </article>
+
+          <article className="feature-card">
             <h3>Mejor para defender mejor la oferta</h3>
             <p>
               Si lo que te falla es como explicas el valor del proyecto, entra en{' '}
