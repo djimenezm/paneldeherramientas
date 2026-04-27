@@ -318,6 +318,16 @@ export const featuredGuides: FeaturedGuide[] = [
     relatedTool: 'Mantenimiento Web Mensual',
   },
   {
+    title: 'Horas incluidas en mantenimiento web',
+    href: 'https://www.mantenimientowebmensual.es/horas-incluidas-mantenimiento-web',
+    trackingHref:
+      'https://www.mantenimientowebmensual.es/horas-incluidas-mantenimiento-web?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
+    category: 'Mantenimiento',
+    description:
+      'Define cuantas horas incluir, que tareas consumen cuota y como cobrar extras sin perder margen.',
+    relatedTool: 'Mantenimiento Web Mensual',
+  },
+  {
     title: 'Contrato de mantenimiento web mensual',
     href: 'https://www.mantenimientowebmensual.es/contrato-mantenimiento-web-mensual',
     trackingHref:

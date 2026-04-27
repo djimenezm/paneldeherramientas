@@ -266,6 +266,17 @@ export default function MejoresHerramientasMantenimientoWebPage() {
           </article>
 
           <article className="feature-card">
+            <h3>Mejor para definir horas incluidas</h3>
+            <p>
+              Si el problema es decidir cuantas horas entran en la cuota, usa la guia de{' '}
+              <a href="https://www.mantenimientowebmensual.es/horas-incluidas-mantenimiento-web">
+                horas incluidas en mantenimiento web
+              </a>{' '}
+              antes de convertir el servicio en soporte ilimitado.
+            </p>
+          </article>
+
+          <article className="feature-card">
             <h3>Mejor para entregar un recurso inicial</h3>
             <p>
               Si quieres estructurar mejor la oferta o el servicio, apóyate en el{' '}
