@@ -218,6 +218,16 @@ export const featuredGuides: FeaturedGuide[] = [
     relatedTool: 'Cuanto Facturar',
   },
   {
+    title: 'Horas facturables freelance',
+    href: 'https://www.cuantofacturar.es/horas-facturables-freelance',
+    trackingHref:
+      'https://www.cuantofacturar.es/horas-facturables-freelance?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
+    category: 'Facturación',
+    description:
+      'Calcula cuantas horas puedes vender al mes antes de fijar tarifa por hora, dia o proyecto.',
+    relatedTool: 'Cuanto Facturar',
+  },
+  {
     title: 'Tarifa diaria freelance',
     href: 'https://www.cuantofacturar.es/tarifa-diaria-freelance',
     trackingHref:

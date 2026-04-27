@@ -262,6 +262,17 @@ export default function MejoresHerramientasFacturacionAutonomosPage() {
           </article>
 
           <article className="feature-card">
+            <h3>Mejor para ajustar horas facturables</h3>
+            <p>
+              Si tu tarifa sale demasiado baja, revisa la guia de{' '}
+              <a href="https://www.cuantofacturar.es/horas-facturables-freelance">
+                horas facturables freelance
+              </a>{' '}
+              antes de dividir tu objetivo mensual entre horas que no siempre puedes vender.
+            </p>
+          </article>
+
+          <article className="feature-card">
             <h3>Mejor para convertir horas en jornadas</h3>
             <p>
               Si no vendes horas sueltas sino dias, workshops o bloques intensivos, revisa la guia
