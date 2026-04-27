@@ -272,6 +272,17 @@ export default function MejoresHerramientasPresupuestosFreelancePage() {
           </article>
 
           <article className="feature-card">
+            <h3>Mejor para proteger margen</h3>
+            <p>
+              Si ya tienes horas y alcance, revisa la guia de{' '}
+              <a href="https://www.cuantopresupuestar.es/margen-presupuesto-freelance">
+                margen en presupuesto freelance
+              </a>{' '}
+              para no confundir buffer, costes y beneficio real antes de cerrar precio.
+            </p>
+          </article>
+
+          <article className="feature-card">
             <h3>Mejor para dividir proyectos largos en hitos</h3>
             <p>
               Si el alcance tiene partes claras y partes todavia abiertas, usa la guia de{' '}

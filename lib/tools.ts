@@ -258,6 +258,16 @@ export const featuredGuides: FeaturedGuide[] = [
     relatedTool: 'Cuanto Presupuestar',
   },
   {
+    title: 'Margen en presupuesto freelance',
+    href: 'https://www.cuantopresupuestar.es/margen-presupuesto-freelance',
+    trackingHref:
+      'https://www.cuantopresupuestar.es/margen-presupuesto-freelance?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
+    category: 'Presupuestos',
+    description:
+      'Calcula margen, buffer, costes y riesgo antes de enviar un precio cerrado.',
+    relatedTool: 'Cuanto Presupuestar',
+  },
+  {
     title: 'Presupuesto por fases freelance',
     href: 'https://www.cuantopresupuestar.es/presupuesto-por-fases-freelance',
     trackingHref:
