@@ -17,6 +17,7 @@ describe('security headers', () => {
     expect(contentSecurityPolicy).toContain("frame-ancestors 'none'");
     expect(contentSecurityPolicy).toContain("form-action 'self'");
     expect(contentSecurityPolicy).toContain("script-src 'self'");
+    expect(contentSecurityPolicy).toContain("require-trusted-types-for 'script'");
     expect(contentSecurityPolicy).toContain("style-src 'self'");
     expect(contentSecurityPolicy).not.toContain(' *');
   });
