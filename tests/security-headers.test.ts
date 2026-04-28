@@ -24,6 +24,9 @@ describe('security headers', () => {
   it('adds complementary browser security headers', () => {
     const headerMap = new Map(securityHeaders.map((header) => [header.key, header.value]));
 
+    expect(headerMap.get('Strict-Transport-Security')).toBe(
+      'max-age=63072000; includeSubDomains; preload',
+    );
     expect(headerMap.get('Referrer-Policy')).toBe('strict-origin-when-cross-origin');
     expect(headerMap.get('X-Content-Type-Options')).toBe('nosniff');
     expect(headerMap.get('X-Frame-Options')).toBe('DENY');
