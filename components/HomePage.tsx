@@ -1,5 +1,3 @@
-import Link from 'next/link';
-import Script from 'next/script';
 import DecisionGuide from '@/components/DecisionGuide';
 import FAQ, { faqItems } from '@/components/FAQ';
 import ToolDirectory from '@/components/ToolDirectory';
@@ -76,7 +74,7 @@ export default function HomePage() {
 
   return (
     <main id="contenido-principal">
-      <Script
+      <script
         id="structured-data"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
@@ -101,21 +99,21 @@ export default function HomePage() {
               <li>Actualizado conforme se publican nuevas calculadoras y guías.</li>
             </ul>
             <div className="guide-cta">
-              <Link href="/precios-freelance" className="tool-link">
+              <a href="/precios-freelance" className="tool-link">
                 Ver guia de precios freelance
-              </Link>
-              <Link href="/calculadoras-para-freelancers" className="tool-link">
+              </a>
+              <a href="/calculadoras-para-freelancers" className="tool-link">
                 Ver calculadoras para freelancers
-              </Link>
-              <Link href="/mejores-herramientas-para-facturacion-autonomos" className="tool-link">
+              </a>
+              <a href="/mejores-herramientas-para-facturacion-autonomos" className="tool-link">
                 Empezar por facturación
-              </Link>
-              <Link
+              </a>
+              <a
                 href="/mejores-herramientas-para-presupuestos-freelance"
                 className="tool-link"
               >
                 Empezar por presupuestos
-              </Link>
+              </a>
             </div>
           </div>
 
@@ -157,9 +155,9 @@ export default function HomePage() {
               IVA y una cifra mensual defendible.
             </p>
             <div className="guide-cta">
-              <Link href="/mejores-herramientas-para-facturacion-autonomos" className="tool-link">
+              <a href="/mejores-herramientas-para-facturacion-autonomos" className="tool-link">
                 Ver herramientas para facturación
-              </Link>
+              </a>
             </div>
           </article>
 
@@ -171,12 +169,12 @@ export default function HomePage() {
               piezas más útiles para presupuestar mejor.
             </p>
             <div className="guide-cta">
-              <Link
+              <a
                 href="/mejores-herramientas-para-presupuestos-freelance"
                 className="tool-link"
               >
                 Ver herramientas para presupuestos
-              </Link>
+              </a>
             </div>
           </article>
 
@@ -188,9 +186,9 @@ export default function HomePage() {
               para soporte, mantenimiento o bolsas de horas.
             </p>
             <div className="guide-cta">
-              <Link href="/mejores-herramientas-para-mantenimiento-web" className="tool-link">
+              <a href="/mejores-herramientas-para-mantenimiento-web" className="tool-link">
                 Ver herramientas para mantenimiento
-              </Link>
+              </a>
             </div>
           </article>
 
@@ -202,9 +200,9 @@ export default function HomePage() {
               esta ruta te baja rápido al caso de una landing page.
             </p>
             <div className="guide-cta">
-              <Link href="/mejores-herramientas-para-landing-pages" className="tool-link">
+              <a href="/mejores-herramientas-para-landing-pages" className="tool-link">
                 Ver herramientas para landing pages
-              </Link>
+              </a>
             </div>
           </article>
         </div>
@@ -334,30 +332,30 @@ export default function HomePage() {
             encontrar la que mejor te sirve en cada momento.
           </div>
           <div className="guide-cta">
-            <Link href="/precios-freelance" className="tool-link">
+            <a href="/precios-freelance" className="tool-link">
               Ver guia de precios freelance
-            </Link>
-            <Link href="/calculadoras-para-freelancers" className="tool-link">
+            </a>
+            <a href="/calculadoras-para-freelancers" className="tool-link">
               Ver calculadoras para freelancers
-            </Link>
-            <Link href="/herramientas-para-freelancers" className="tool-link">
+            </a>
+            <a href="/herramientas-para-freelancers" className="tool-link">
               Ver recursos para freelancers
-            </Link>
-            <Link href="/recursos-para-autonomos" className="tool-link">
+            </a>
+            <a href="/recursos-para-autonomos" className="tool-link">
               Ver recursos para autónomos
-            </Link>
-            <Link href="/mejores-herramientas-para-presupuestos-freelance" className="tool-link">
+            </a>
+            <a href="/mejores-herramientas-para-presupuestos-freelance" className="tool-link">
               Ver herramientas para presupuestar mejor
-            </Link>
-            <Link href="/mejores-herramientas-para-mantenimiento-web" className="tool-link">
+            </a>
+            <a href="/mejores-herramientas-para-mantenimiento-web" className="tool-link">
               Ver herramientas para mantenimiento web
-            </Link>
-            <Link href="/mejores-herramientas-para-landing-pages" className="tool-link">
+            </a>
+            <a href="/mejores-herramientas-para-landing-pages" className="tool-link">
               Ver herramientas para landing pages
-            </Link>
-            <Link href="/mejores-herramientas-para-facturacion-autonomos" className="tool-link">
+            </a>
+            <a href="/mejores-herramientas-para-facturacion-autonomos" className="tool-link">
               Ver herramientas para facturación
-            </Link>
+            </a>
           </div>
         </div>
       </section>

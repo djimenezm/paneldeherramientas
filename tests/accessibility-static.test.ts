@@ -13,14 +13,22 @@ function collectFiles(directory: string, isTargetFile: (fileName: string) => boo
   });
 }
 
-const pageFiles = collectFiles(join(process.cwd(), 'app'), (fileName) => fileName === 'page.tsx');
+const appPageFiles = collectFiles(join(process.cwd(), 'app'), (fileName) => fileName === 'page.tsx');
+const pagesRouterFiles = collectFiles(join(process.cwd(), 'pages'), (fileName) =>
+  fileName.endsWith('.tsx'),
+);
 const componentFiles = collectFiles(join(process.cwd(), 'components'), (fileName) =>
   fileName.endsWith('.tsx'),
 );
 const sourceFiles = [
-  ...pageFiles,
+  ...appPageFiles,
+  ...pagesRouterFiles,
   ...componentFiles,
   join(process.cwd(), 'app/layout.tsx'),
+];
+const routedContentFiles = [
+  ...appPageFiles,
+  join(process.cwd(), 'components/HomePage.tsx'),
 ];
 
 function readSource(filePath: string) {
@@ -60,26 +68,36 @@ describe('static accessibility safeguards', () => {
 
   it('keeps the skip link before the main content target', () => {
     const layoutSource = readSource(join(process.cwd(), 'app/layout.tsx'));
+    const pagesAppSource = readSource(join(process.cwd(), 'pages/_app.tsx'));
 
     expect(layoutSource).toContain('href="#contenido-principal"');
+    expect(pagesAppSource).toContain('href="#contenido-principal"');
 
-    for (const pageFile of pageFiles) {
+    for (const pageFile of routedContentFiles) {
       expect(readSource(pageFile)).toMatch(/<main[^>]*id="contenido-principal"/);
     }
   });
 
   it('keeps navigation landmarks outside page main content', () => {
     const layoutSource = readSource(join(process.cwd(), 'app/layout.tsx'));
+    const pagesAppSource = readSource(join(process.cwd(), 'pages/_app.tsx'));
     const headerIndex = layoutSource.indexOf('<Header />');
     const childrenIndex = layoutSource.indexOf('{children}');
     const footerIndex = layoutSource.indexOf('<Footer />');
+    const pagesHeaderIndex = pagesAppSource.indexOf('<Header />');
+    const componentIndex = pagesAppSource.indexOf('<Component {...pageProps} />');
+    const pagesFooterIndex = pagesAppSource.indexOf('<Footer />');
 
     expect(headerIndex).toBeGreaterThan(-1);
     expect(footerIndex).toBeGreaterThan(-1);
     expect(headerIndex).toBeLessThan(childrenIndex);
     expect(childrenIndex).toBeLessThan(footerIndex);
+    expect(pagesHeaderIndex).toBeGreaterThan(-1);
+    expect(pagesFooterIndex).toBeGreaterThan(-1);
+    expect(pagesHeaderIndex).toBeLessThan(componentIndex);
+    expect(componentIndex).toBeLessThan(pagesFooterIndex);
 
-    for (const pageFile of pageFiles) {
+    for (const pageFile of routedContentFiles) {
       const pageSource = readSource(pageFile);
 
       expect(pageSource).not.toMatch(/<Header \/>|<Footer \/>/);
@@ -101,5 +119,15 @@ describe('static accessibility safeguards', () => {
     expect(globalStyles).toMatch(
       /\.skip-link:focus-visible\s*{[^}]*transform:\s*translateY\(0\)/s,
     );
+  });
+
+  it('keeps the homepage free of Next client runtime scripts', () => {
+    const homeShellSource = readSource(join(process.cwd(), 'pages/index.tsx'));
+    const pagesAppSource = readSource(join(process.cwd(), 'pages/_app.tsx'));
+    const homeContentSource = readSource(join(process.cwd(), 'components/HomePage.tsx'));
+
+    expect(homeShellSource).toContain('unstable_runtimeJS: false');
+    expect(pagesAppSource).toContain('src="/_vercel/insights/script.js"');
+    expect(homeContentSource).not.toMatch(/next\/link|next\/script/);
   });
 });

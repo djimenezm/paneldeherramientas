@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import HomePage from '@/app/page';
+import HomePage from '@/components/HomePage';
 
 describe('homepage DOM budget', () => {
   it('keeps the main homepage markup compact', () => {

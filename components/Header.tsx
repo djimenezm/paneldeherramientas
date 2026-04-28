@@ -1,22 +1,20 @@
-import Link from 'next/link';
-
 export default function Header() {
   return (
     <header className="site-header">
       <div className="container header-inner">
-        <Link href="/" className="brand">
+        <a href="/" className="brand">
           Panel de Herramientas
-        </Link>
+        </a>
 
         <nav className="nav" aria-label="Navegación principal">
-          <Link href="/#herramientas">Herramientas</Link>
-          <Link href="/precios-freelance">Precios</Link>
-          <Link href="/calculadoras-para-freelancers">Calculadoras</Link>
-          <Link href="/#guias-destacadas">Guías</Link>
-          <Link href="/herramientas-para-freelancers">Freelancers</Link>
-          <Link href="/recursos-para-autonomos">Autónomos</Link>
-          <Link href="/#como-funciona">Cómo usarlo</Link>
-          <Link href="/#faq">FAQ</Link>
+          <a href="/#herramientas">Herramientas</a>
+          <a href="/precios-freelance">Precios</a>
+          <a href="/calculadoras-para-freelancers">Calculadoras</a>
+          <a href="/#guias-destacadas">Guías</a>
+          <a href="/herramientas-para-freelancers">Freelancers</a>
+          <a href="/recursos-para-autonomos">Autónomos</a>
+          <a href="/#como-funciona">Cómo usarlo</a>
+          <a href="/#faq">FAQ</a>
         </nav>
       </div>
     </header>

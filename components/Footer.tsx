@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { siteConfig } from '@/lib/site';
 
 export default function Footer() {
@@ -16,18 +15,18 @@ export default function Footer() {
           </p>
         </div>
         <div className="footer-links">
-          <Link href="/#guias-destacadas">Guías destacadas</Link>
-          <Link href="/precios-freelance">Precios freelance</Link>
-          <Link href="/calculadoras-para-freelancers">Calculadoras</Link>
-          <Link href="/herramientas-para-freelancers">Freelancers</Link>
-          <Link href="/recursos-para-autonomos">Autónomos</Link>
-          <Link href="/mejores-herramientas-para-presupuestos-freelance">Presupuestos</Link>
-          <Link href="/mejores-herramientas-para-mantenimiento-web">Mantenimiento</Link>
-          <Link href="/mejores-herramientas-para-landing-pages">Landing pages</Link>
-          <Link href="/mejores-herramientas-para-facturacion-autonomos">Facturación</Link>
-          <Link href="/aviso-legal">Aviso legal</Link>
-          <Link href="/privacidad">Privacidad</Link>
-          <Link href="/cookies">Cookies</Link>
+          <a href="/#guias-destacadas">Guías destacadas</a>
+          <a href="/precios-freelance">Precios freelance</a>
+          <a href="/calculadoras-para-freelancers">Calculadoras</a>
+          <a href="/herramientas-para-freelancers">Freelancers</a>
+          <a href="/recursos-para-autonomos">Autónomos</a>
+          <a href="/mejores-herramientas-para-presupuestos-freelance">Presupuestos</a>
+          <a href="/mejores-herramientas-para-mantenimiento-web">Mantenimiento</a>
+          <a href="/mejores-herramientas-para-landing-pages">Landing pages</a>
+          <a href="/mejores-herramientas-para-facturacion-autonomos">Facturación</a>
+          <a href="/aviso-legal">Aviso legal</a>
+          <a href="/privacidad">Privacidad</a>
+          <a href="/cookies">Cookies</a>
         </div>
       </div>
     </footer>
