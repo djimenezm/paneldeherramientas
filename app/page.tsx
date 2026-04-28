@@ -2,8 +2,6 @@ import Link from 'next/link';
 import Script from 'next/script';
 import DecisionGuide from '@/components/DecisionGuide';
 import FAQ, { faqItems } from '@/components/FAQ';
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
 import ToolDirectory from '@/components/ToolDirectory';
 import { siteConfig } from '@/lib/site';
 import { featuredGuides, liveTools, pendingTools, pricingWorkflow, tools } from '@/lib/tools';
@@ -79,9 +77,6 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-
-      <Header />
-
       <section className="hero">
         <div className="container hero-panel">
           <div>
@@ -365,7 +360,6 @@ export default function HomePage() {
       </section>
 
       <FAQ />
-      <Footer />
     </main>
   );
 }

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function PrivacidadPage() {
   return (
-    <main className="legal-page container">
+    <main id="contenido-principal" className="legal-page container">
       <h1>Politica de privacidad</h1>
       <div className="legal-card">
         <p>

@@ -1,8 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Script from 'next/script';
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
 import { getSiteUrl, siteConfig } from '@/lib/site';
 
 const route = '/recursos-para-autonomos';
@@ -119,7 +117,7 @@ export default function RecursosParaAutonomosPage() {
   };
 
   return (
-    <main>
+    <main id="contenido-principal">
       <Script
         id="recursos-autonomos-article-schema"
         type="application/ld+json"
@@ -135,9 +133,6 @@ export default function RecursosParaAutonomosPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-
-      <Header />
-
       <section className="hero">
         <div className="container article-layout">
           <div className="text-block">
@@ -343,7 +338,6 @@ export default function RecursosParaAutonomosPage() {
         </div>
       </section>
 
-      <Footer />
     </main>
   );
 }

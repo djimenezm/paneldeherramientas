@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function AvisoLegalPage() {
   return (
-    <main className="legal-page container">
+    <main id="contenido-principal" className="legal-page container">
       <h1>Aviso legal</h1>
       <div className="legal-card">
         <p>

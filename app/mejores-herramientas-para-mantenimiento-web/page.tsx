@@ -1,8 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Script from 'next/script';
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
 import { getSiteUrl, siteConfig } from '@/lib/site';
 
 const route = '/mejores-herramientas-para-mantenimiento-web';
@@ -119,7 +117,7 @@ export default function MejoresHerramientasMantenimientoWebPage() {
   };
 
   return (
-    <main>
+    <main id="contenido-principal">
       <Script
         id="mantenimiento-web-article-schema"
         type="application/ld+json"
@@ -135,9 +133,6 @@ export default function MejoresHerramientasMantenimientoWebPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-
-      <Header />
-
       <section className="hero">
         <div className="container article-layout">
           <div className="text-block">
@@ -378,7 +373,6 @@ export default function MejoresHerramientasMantenimientoWebPage() {
         </div>
       </section>
 
-      <Footer />
     </main>
   );
 }

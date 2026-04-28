@@ -1,8 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Script from 'next/script';
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
 import { getSiteUrl, siteConfig } from '@/lib/site';
 import { pricingWorkflow, tools } from '@/lib/tools';
 
@@ -132,7 +130,7 @@ export default function PreciosFreelancePage() {
   };
 
   return (
-    <main>
+    <main id="contenido-principal">
       <Script
         id="precios-freelance-article-schema"
         type="application/ld+json"
@@ -153,9 +151,6 @@ export default function PreciosFreelancePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-
-      <Header />
-
       <section className="hero">
         <div className="container article-layout">
           <div className="text-block">
@@ -404,7 +399,6 @@ export default function PreciosFreelancePage() {
         </div>
       </section>
 
-      <Footer />
     </main>
   );
 }

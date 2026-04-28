@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function CookiesPage() {
   return (
-    <main className="legal-page container">
+    <main id="contenido-principal" className="legal-page container">
       <h1>Politica de cookies</h1>
       <div className="legal-card">
         <p>Contacto publico: actualmente no disponible en esta web.</p>

@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/next';
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
 import { getSiteUrl, siteConfig } from '@/lib/site';
 import './globals.css';
 
@@ -68,7 +70,9 @@ export default function RootLayout({
         <a className="skip-link" href="#contenido-principal">
           Saltar al contenido principal
         </a>
+        <Header />
         {children}
+        <Footer />
         <Analytics />
       </body>
     </html>
