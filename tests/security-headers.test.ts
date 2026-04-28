@@ -27,6 +27,7 @@ describe('security headers', () => {
     expect(headerMap.get('Strict-Transport-Security')).toBe(
       'max-age=63072000; includeSubDomains; preload',
     );
+    expect(headerMap.get('Cross-Origin-Opener-Policy')).toBe('same-origin');
     expect(headerMap.get('Referrer-Policy')).toBe('strict-origin-when-cross-origin');
     expect(headerMap.get('X-Content-Type-Options')).toBe('nosniff');
     expect(headerMap.get('X-Frame-Options')).toBe('DENY');

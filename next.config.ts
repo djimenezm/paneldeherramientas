@@ -27,6 +27,10 @@ export const securityHeaders = [
     value: 'max-age=63072000; includeSubDomains; preload',
   },
   {
+    key: 'Cross-Origin-Opener-Policy',
+    value: 'same-origin',
+  },
+  {
     key: 'Referrer-Policy',
     value: 'strict-origin-when-cross-origin',
   },
