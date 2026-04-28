@@ -1,26 +1,26 @@
 import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 
-function collectPageFiles(directory: string): string[] {
+function collectFiles(directory: string, isTargetFile: (fileName: string) => boolean): string[] {
   return readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
     const fullPath = join(directory, entry.name);
 
     if (entry.isDirectory()) {
-      return collectPageFiles(fullPath);
+      return collectFiles(fullPath, isTargetFile);
     }
 
-    return entry.name === 'page.tsx' ? [fullPath] : [];
+    return isTargetFile(entry.name) ? [fullPath] : [];
   });
 }
 
-const pageFiles = collectPageFiles(join(process.cwd(), 'app'));
+const pageFiles = collectFiles(join(process.cwd(), 'app'), (fileName) => fileName === 'page.tsx');
+const componentFiles = collectFiles(join(process.cwd(), 'components'), (fileName) =>
+  fileName.endsWith('.tsx'),
+);
 const sourceFiles = [
   ...pageFiles,
+  ...componentFiles,
   join(process.cwd(), 'app/layout.tsx'),
-  join(process.cwd(), 'components/DecisionGuide.tsx'),
-  join(process.cwd(), 'components/Footer.tsx'),
-  join(process.cwd(), 'components/Header.tsx'),
-  join(process.cwd(), 'components/ToolDirectory.tsx'),
 ];
 
 function readSource(filePath: string) {
@@ -46,6 +46,16 @@ describe('static accessibility safeguards', () => {
     expect(combinedSource).not.toMatch(
       /useState|useReducer|useEffect|useTransition|startTransition|setTimeout|setInterval|createPortal|appendChild|insertAdjacent|role="alert"|role="status"|aria-live|toast|modal|dialog/i,
     );
+  });
+
+  it('uses native links instead of unlabeled custom interactive controls', () => {
+    const combinedSource = sourceFiles
+      .map((filePath) => readSource(filePath))
+      .join('\n');
+
+    expect(combinedSource).not.toMatch(/onClick|role="button"|role="link"|role="checkbox"/i);
+    expect(combinedSource).not.toMatch(/role="switch"|role="tab"|role="radio"|role="menuitem"/i);
+    expect(combinedSource).not.toMatch(/role="option"|role="slider"|role="combobox"/i);
   });
 
   it('keeps the skip link before the main content target', () => {
