@@ -87,9 +87,8 @@ export default function HomePage() {
             <span className="eyebrow">Panel central</span>
             <h1>Todas las herramientas del ecosistema en un solo sitio</h1>
             <p className="lead">
-              Este panel reúne las calculadoras y utilidades públicas que ya están en marcha para
-              ayudarte a facturar mejor, presupuestar proyectos, fijar cuotas recurrentes o poner
-              precio a una landing page sin ir a ciegas.
+              Un punto de entrada para calcular facturación, presupuestos, cuotas y landings sin ir
+              a ciegas.
             </p>
             <div className="hero-badges" aria-label="Estado actual del panel">
               <span className="hero-badge">{tools.length} herramientas listadas</span>
@@ -98,7 +97,7 @@ export default function HomePage() {
             </div>
             <ul className="hero-points">
               <li>Un punto de entrada único para todas las apps públicas del ecosistema.</li>
-              <li>Herramientas pequeñas, especializadas y pensadas para freelancers y autónomos.</li>
+              <li>Herramientas pequeñas para facturar mejor, presupuestar y fijar cuotas.</li>
               <li>Actualizado conforme se publican nuevas calculadoras y guías.</li>
             </ul>
             <div className="guide-cta">

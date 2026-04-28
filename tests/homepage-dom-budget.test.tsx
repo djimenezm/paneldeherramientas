@@ -7,5 +7,8 @@ describe('homepage DOM budget', () => {
 
     expect(container.querySelectorAll('*').length).toBeLessThanOrEqual(320);
     expect(container.querySelectorAll('.compact-guide-links a').length).toBeLessThanOrEqual(12);
+    expect(container.querySelector('.hero .lead')?.textContent?.length ?? 0).toBeLessThanOrEqual(
+      120,
+    );
   });
 });
