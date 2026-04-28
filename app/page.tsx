@@ -73,7 +73,7 @@ export default function HomePage() {
   };
 
   return (
-    <main>
+    <main id="contenido-principal">
       <Script
         id="structured-data"
         type="application/ld+json"
