@@ -6,11 +6,15 @@ import ToolDirectory from '@/components/ToolDirectory';
 import { siteConfig } from '@/lib/site';
 import { featuredGuides, liveTools, pendingTools, pricingWorkflow, tools } from '@/lib/tools';
 
-const FEATURED_GUIDE_CARD_COUNT = 8;
+const FEATURED_GUIDE_CARD_COUNT = 6;
+const COMPACT_GUIDE_LINK_COUNT = 12;
 
 export default function HomePage() {
   const highlightedGuides = featuredGuides.slice(0, FEATURED_GUIDE_CARD_COUNT);
-  const compactGuides = featuredGuides.slice(FEATURED_GUIDE_CARD_COUNT);
+  const compactGuides = featuredGuides.slice(
+    FEATURED_GUIDE_CARD_COUNT,
+    FEATURED_GUIDE_CARD_COUNT + COMPACT_GUIDE_LINK_COUNT,
+  );
 
   const websiteSchema = {
     '@type': 'WebSite',

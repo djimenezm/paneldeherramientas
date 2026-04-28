@@ -6,27 +6,14 @@ export default function DecisionGuide() {
       <div className="container">
         <div className="section-heading">
           <span className="eyebrow">Rutas rápidas</span>
-          <h2 id="decision-guide-title">Empieza por la pregunta correcta</h2>
+          <h2 id="decision-guide-title">Compara el resultado que necesitas</h2>
           <p className="section-lead">
-            Si no tienes claro qué herramienta abrir primero, usa estas rutas como atajo. Cada una
-            responde a una necesidad distinta y devuelve un tipo de resultado diferente.
+            Si no tienes claro qué herramienta abrir primero, compara la salida principal de cada
+            calculadora antes de saltar al dominio concreto.
           </p>
         </div>
 
-        <div className="routes-grid">
-          {tools.map((tool) => (
-            <article className="route-card" key={tool.name}>
-              <span className="route-kicker">{tool.category}</span>
-              <h3>{tool.primaryQuestion}</h3>
-              <p>{tool.bestWhen}</p>
-              <a className="tool-link" href={tool.trackingHref}>
-                Ir a {tool.name}
-              </a>
-            </article>
-          ))}
-        </div>
-
-          <div className="matrix-card" aria-label="Comparativa rápida de herramientas">
+        <div className="matrix-card" aria-label="Comparativa rápida de herramientas">
           <div className="matrix-head">
             <h3>Comparativa rápida</h3>
             <p>Qué te devuelve cada herramienta y cuándo compensa abrirla primero.</p>
@@ -37,14 +24,10 @@ export default function DecisionGuide() {
               <article className="matrix-row" key={tool.name}>
                 <div className="matrix-main">
                   <strong>{tool.name}</strong>
-                  <span>{tool.category}</span>
                 </div>
                 <div className="matrix-detail">
                   <p>
-                    <strong>Salida principal:</strong> {tool.output}
-                  </p>
-                  <p>
-                    <strong>Cuándo usarla:</strong> {tool.bestWhen}
+                    <strong>Salida:</strong> {tool.output} Uso recomendado: {tool.bestWhen}
                   </p>
                 </div>
               </article>

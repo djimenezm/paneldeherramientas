@@ -37,12 +37,6 @@ export default function ToolDirectory() {
                 <strong>Ideal para:</strong> {tool.useCase}
               </p>
 
-              <ul className="tool-tags" aria-label={`Etiquetas de ${tool.name}`}>
-                {tool.tags.map((tag) => (
-                  <li key={tag}>{tag}</li>
-                ))}
-              </ul>
-
               {tool.isLive ? (
                 <a
                   className="tool-link"

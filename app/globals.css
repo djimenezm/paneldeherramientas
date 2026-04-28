@@ -448,24 +448,6 @@ h3 {
   color: var(--text);
 }
 
-.tool-tags {
-  display: flex;
-  gap: 0.55rem;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.tool-tags li {
-  border-radius: 999px;
-  padding: 0.35rem 0.7rem;
-  background: #f3f8f6;
-  border: 1px solid var(--line);
-  color: var(--muted);
-  font-size: 0.88rem;
-}
-
 .tool-link {
   display: inline-flex;
   align-items: center;
@@ -565,30 +547,17 @@ h3 {
   max-width: 780px;
 }
 
-.routes-grid,
 .matrix-list {
   display: grid;
   gap: 1rem;
 }
 
-.routes-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  margin-bottom: 1.25rem;
-}
-
-.route-card,
 .matrix-card,
 .matrix-row {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 16px;
   box-shadow: var(--shadow);
-}
-
-.route-card {
-  display: grid;
-  gap: 0.9rem;
-  padding: 1.2rem;
 }
 
 .route-kicker {
@@ -600,12 +569,6 @@ h3 {
   color: #14518b;
   font-size: 0.85rem;
   font-weight: 700;
-}
-
-.route-card p {
-  margin: 0;
-  color: var(--muted);
-  line-height: 1.7;
 }
 
 .matrix-card {
@@ -632,21 +595,6 @@ h3 {
   grid-template-columns: 0.55fr 1fr;
   gap: 1rem;
   padding: 1rem;
-}
-
-.matrix-main {
-  display: grid;
-  gap: 0.4rem;
-}
-
-.matrix-main span {
-  color: var(--muted);
-  font-size: 0.92rem;
-}
-
-.matrix-detail {
-  display: grid;
-  gap: 0.55rem;
 }
 
 .matrix-detail strong {
@@ -729,7 +677,6 @@ h3 {
   .workflow-grid,
   .guide-grid,
   .tools-grid,
-  .routes-grid,
   .matrix-row {
     grid-template-columns: 1fr;
   }
