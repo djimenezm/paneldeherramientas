@@ -233,7 +233,11 @@ export default function HomePage() {
               <div className="workflow-takeaway">
                 <strong>Resultado:</strong> {workflowStep.takeaway}
               </div>
-              <a href={workflowStep.trackingHref} className="tool-link">
+              <a
+                href={workflowStep.trackingHref}
+                className="tool-link"
+                aria-label={`Abrir ${workflowStep.toolName} desde el flujo recomendado`}
+              >
                 Abrir {workflowStep.toolName}
               </a>
             </article>
@@ -292,7 +296,7 @@ export default function HomePage() {
               <h3>{guide.title}</h3>
               <p>{guide.description}</p>
               <a href={guide.trackingHref} className="tool-link">
-                Abrir guia
+                Abrir guía: {guide.title}
               </a>
             </article>
           ))}

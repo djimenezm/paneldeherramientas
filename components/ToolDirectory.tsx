@@ -44,8 +44,12 @@ export default function ToolDirectory() {
               </ul>
 
               {tool.isLive ? (
-                <a className="tool-link" href={tool.trackingHref}>
-                  Abrir herramienta
+                <a
+                  className="tool-link"
+                  href={tool.trackingHref}
+                  aria-label={`Abrir ${tool.name} desde el inventario de herramientas`}
+                >
+                  Abrir {tool.name}
                 </a>
               ) : (
                 <div className="tool-link tool-link-disabled">Disponible muy pronto</div>
