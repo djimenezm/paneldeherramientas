@@ -8,9 +8,13 @@ import ToolDirectory from '@/components/ToolDirectory';
 import { siteConfig } from '@/lib/site';
 import { featuredGuides, liveTools, pendingTools, pricingWorkflow, tools } from '@/lib/tools';
 
+const FEATURED_GUIDE_CARD_COUNT = 8;
+
 export default function HomePage() {
+  const highlightedGuides = featuredGuides.slice(0, FEATURED_GUIDE_CARD_COUNT);
+  const compactGuides = featuredGuides.slice(FEATURED_GUIDE_CARD_COUNT);
+
   const websiteSchema = {
-    '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: siteConfig.name,
     description: siteConfig.description,
@@ -19,7 +23,6 @@ export default function HomePage() {
   };
 
   const itemListSchema = {
-    '@context': 'https://schema.org',
     '@type': 'ItemList',
     name: 'Herramientas públicas del ecosistema',
     itemListElement: tools.map((tool, index) => ({
@@ -31,7 +34,6 @@ export default function HomePage() {
   };
 
   const guideListSchema = {
-    '@context': 'https://schema.org',
     '@type': 'ItemList',
     name: 'Guías destacadas del ecosistema',
     itemListElement: featuredGuides.map((guide, index) => ({
@@ -43,7 +45,6 @@ export default function HomePage() {
   };
 
   const workflowListSchema = {
-    '@context': 'https://schema.org',
     '@type': 'ItemList',
     name: 'Flujo recomendado para poner precios',
     itemListElement: pricingWorkflow.map((workflowStep, index) => ({
@@ -55,7 +56,6 @@ export default function HomePage() {
   };
 
   const faqSchema = {
-    '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: faqItems.map((item) => ({
       '@type': 'Question',
@@ -67,32 +67,17 @@ export default function HomePage() {
     })),
   };
 
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@graph': [websiteSchema, itemListSchema, guideListSchema, workflowListSchema, faqSchema],
+  };
+
   return (
     <main>
       <Script
-        id="website-schema"
+        id="structured-data"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
-      />
-      <Script
-        id="itemlist-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
-      />
-      <Script
-        id="guide-list-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(guideListSchema) }}
-      />
-      <Script
-        id="workflow-list-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(workflowListSchema) }}
-      />
-      <Script
-        id="faq-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
       <Header />
@@ -298,7 +283,7 @@ export default function HomePage() {
         </div>
 
         <div className="container guide-grid" aria-label="Guías destacadas del ecosistema">
-          {featuredGuides.map((guide) => (
+          {highlightedGuides.map((guide) => (
             <article className="guide-card" key={guide.href}>
               <div className="tool-meta">
                 <span className="tool-category">{guide.category}</span>
@@ -312,6 +297,19 @@ export default function HomePage() {
             </article>
           ))}
         </div>
+
+        {compactGuides.length > 0 && (
+          <div className="container compact-guide-panel" aria-labelledby="more-guides-title">
+            <h3 id="more-guides-title">Más guías para seguir afinando</h3>
+            <div className="compact-guide-links">
+              {compactGuides.map((guide) => (
+                <a href={guide.trackingHref} key={guide.href}>
+                  {guide.title}
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
       </section>
 
       <DecisionGuide />

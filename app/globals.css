@@ -385,6 +385,34 @@ h3 {
   line-height: 1.7;
 }
 
+.compact-guide-panel {
+  margin-top: 1rem;
+  padding: 1.15rem;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.64);
+}
+
+.compact-guide-panel h3 {
+  margin-bottom: 0.85rem;
+}
+
+.compact-guide-links {
+  display: flex;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.compact-guide-links a {
+  border-radius: 999px;
+  padding: 0.45rem 0.7rem;
+  background: #f3f8f6;
+  border: 1px solid var(--line);
+  color: var(--accent-dark);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
 .guide-tool {
   display: inline-flex;
   align-items: center;
