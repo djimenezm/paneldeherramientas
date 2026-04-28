@@ -76,4 +76,20 @@ describe('static accessibility safeguards', () => {
       expect(pageSource).not.toMatch(/@\/components\/Header|@\/components\/Footer/);
     }
   });
+
+  it('keeps offscreen content limited to the keyboard skip link', () => {
+    const combinedSource = sourceFiles
+      .map((filePath) => readSource(filePath))
+      .join('\n');
+    const globalStyles = readSource(join(process.cwd(), 'app/globals.css'));
+
+    expect(combinedSource).not.toMatch(/aria-hidden|sr-only|visually-hidden/i);
+    expect(globalStyles).not.toMatch(
+      /display:\s*none|visibility:\s*hidden|clip-path|left:\s*-[0-9]|top:\s*-[0-9]|sr-only|visually-hidden/i,
+    );
+    expect(globalStyles).toMatch(/\.skip-link\s*{[^}]*transform:\s*translateY\(-160%\)/s);
+    expect(globalStyles).toMatch(
+      /\.skip-link:focus-visible\s*{[^}]*transform:\s*translateY\(0\)/s,
+    );
+  });
 });
