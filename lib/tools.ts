@@ -318,6 +318,16 @@ export const featuredGuides: FeaturedGuide[] = [
     relatedTool: 'Cuanto Presupuestar',
   },
   {
+    title: 'Precio de una pagina web profesional freelance',
+    href: 'https://www.cuantopresupuestar.es/precio-pagina-web-profesional-freelance',
+    trackingHref:
+      'https://www.cuantopresupuestar.es/precio-pagina-web-profesional-freelance?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
+    category: 'Presupuestos',
+    description:
+      'Calcula alcance, contenidos, revisiones, integraciones y margen antes de vender una web profesional.',
+    relatedTool: 'Cuanto Presupuestar',
+  },
+  {
     title: 'Qué incluye un mantenimiento web mensual',
     href: 'https://www.mantenimientowebmensual.es/que-incluye-mantenimiento-web',
     trackingHref:
