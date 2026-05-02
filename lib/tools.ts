@@ -338,6 +338,16 @@ export const featuredGuides: FeaturedGuide[] = [
     relatedTool: 'Mantenimiento Web Mensual',
   },
   {
+    title: 'Cuanto cobrar mantenimiento WordPress mensual',
+    href: 'https://www.mantenimientowebmensual.es/cuanto-cobrar-mantenimiento-wordpress-mensual',
+    trackingHref:
+      'https://www.mantenimientowebmensual.es/cuanto-cobrar-mantenimiento-wordpress-mensual?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
+    category: 'Mantenimiento',
+    description:
+      'Convierte soporte, actualizaciones, incidencias, herramientas y margen en una cuota WordPress defendible.',
+    relatedTool: 'Mantenimiento Web Mensual',
+  },
+  {
     title: 'Mantenimiento web mensual vs bolsa de horas',
     href: 'https://www.mantenimientowebmensual.es/mantenimiento-web-vs-bolsa-horas',
     trackingHref:
