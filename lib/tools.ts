@@ -458,6 +458,16 @@ export const featuredGuides: FeaturedGuide[] = [
     relatedTool: 'Cuanto Cobrar Landing Page',
   },
   {
+    title: 'Cuanto cobrar una landing page para Google Ads',
+    href: 'https://www.cuantocobrarlandingpage.es/cuanto-cobrar-landing-page-google-ads',
+    trackingHref:
+      'https://www.cuantocobrarlandingpage.es/cuanto-cobrar-landing-page-google-ads?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
+    category: 'Landing pages',
+    description:
+      'Calcula precio, tracking, copy, revisiones y margen antes de vender una landing para anuncios.',
+    relatedTool: 'Cuanto Cobrar Landing Page',
+  },
+  {
     title: 'Precio landing page freelance',
     href: 'https://www.cuantocobrarlandingpage.es/precio-landing-page-freelance',
     trackingHref:
