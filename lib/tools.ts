@@ -308,6 +308,16 @@ export const featuredGuides: FeaturedGuide[] = [
     relatedTool: 'Cuanto Presupuestar',
   },
   {
+    title: 'Cuanto cobrar por una web corporativa freelance',
+    href: 'https://www.cuantopresupuestar.es/cuanto-cobrar-web-corporativa-freelance',
+    trackingHref:
+      'https://www.cuantopresupuestar.es/cuanto-cobrar-web-corporativa-freelance?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
+    category: 'Presupuestos',
+    description:
+      'Separa paginas, contenidos, revisiones, integraciones y soporte antes de presupuestar una web corporativa.',
+    relatedTool: 'Cuanto Presupuestar',
+  },
+  {
     title: 'Qué incluye un mantenimiento web mensual',
     href: 'https://www.mantenimientowebmensual.es/que-incluye-mantenimiento-web',
     trackingHref:
