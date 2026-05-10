@@ -348,6 +348,16 @@ export const featuredGuides: FeaturedGuide[] = [
     relatedTool: 'Mantenimiento Web Mensual',
   },
   {
+    title: 'Mantenimiento web para ecommerce',
+    href: 'https://www.mantenimientowebmensual.es/mantenimiento-web-para-ecommerce',
+    trackingHref:
+      'https://www.mantenimientowebmensual.es/mantenimiento-web-para-ecommerce?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
+    category: 'Mantenimiento',
+    description:
+      'Define cuota, soporte, integraciones, urgencias y extras para tiendas online sin vender soporte ilimitado.',
+    relatedTool: 'Mantenimiento Web Mensual',
+  },
+  {
     title: 'Cuanto cobrar mantenimiento WordPress mensual',
     href: 'https://www.mantenimientowebmensual.es/cuanto-cobrar-mantenimiento-wordpress-mensual',
     trackingHref:

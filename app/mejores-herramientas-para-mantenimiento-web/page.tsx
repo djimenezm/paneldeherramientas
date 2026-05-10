@@ -250,6 +250,18 @@ export default function MejoresHerramientasMantenimientoWebPage() {
           </article>
 
           <article className="feature-card">
+            <h3>Mejor para tiendas online</h3>
+            <p>
+              Si el cliente vende desde la web, revisa{' '}
+              <a href="https://www.mantenimientowebmensual.es/mantenimiento-web-para-ecommerce">
+                mantenimiento web para ecommerce
+              </a>{' '}
+              para definir cuota, soporte, integraciones, urgencias y extras sin prometer soporte
+              ilimitado.
+            </p>
+          </article>
+
+          <article className="feature-card">
             <h3>Mejor para afinar WordPress como caso comun</h3>
             <p>
               Usa la guia de{' '}
