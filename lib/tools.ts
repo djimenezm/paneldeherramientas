@@ -318,6 +318,16 @@ export const featuredGuides: FeaturedGuide[] = [
     relatedTool: 'Cuanto Presupuestar',
   },
   {
+    title: 'Cuanto cobrar por una tienda online freelance',
+    href: 'https://www.cuantopresupuestar.es/cuanto-cobrar-tienda-online-freelance',
+    trackingHref:
+      'https://www.cuantopresupuestar.es/cuanto-cobrar-tienda-online-freelance?utm_source=paneldeherramientas&utm_medium=hub-guide&utm_campaign=featured_guides',
+    category: 'Presupuestos',
+    description:
+      'Presupuesta catalogo, pagos, envios, integraciones, revisiones y soporte posterior de una tienda online.',
+    relatedTool: 'Cuanto Presupuestar',
+  },
+  {
     title: 'Precio de una pagina web profesional freelance',
     href: 'https://www.cuantopresupuestar.es/precio-pagina-web-profesional-freelance',
     trackingHref:

@@ -311,6 +311,17 @@ export default function MejoresHerramientasPresupuestosFreelancePage() {
           </article>
 
           <article className="feature-card">
+            <h3>Mejor para tiendas online</h3>
+            <p>
+              Si el proyecto incluye catalogo, pagos, envios o integraciones, usa{' '}
+              <a href="https://www.cuantopresupuestar.es/cuanto-cobrar-tienda-online-freelance">
+                cuanto cobrar por una tienda online freelance
+              </a>{' '}
+              para separar construccion, puesta en marcha, extras y mantenimiento posterior.
+            </p>
+          </article>
+
+          <article className="feature-card">
             <h3>Mejor para servicios concretos</h3>
             <p>
               Si tu presupuesto es muy especifico, como una landing o una cuota de mantenimiento,
