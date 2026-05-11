@@ -3,7 +3,7 @@ const productionUrl = 'https://www.paneldeherramientas.es';
 export const siteConfig = {
   name: 'Panel de Herramientas',
   shortName: 'Panel',
-  title: 'Inventario de aplicaciones para freelancers y autonomos',
+  title: 'Calculadoras para freelancers',
   description:
     'Reune en una sola web todas las calculadoras y herramientas publicas del ecosistema: facturacion, presupuestos, mantenimiento web y landing pages.',
   locale: 'es_ES',
