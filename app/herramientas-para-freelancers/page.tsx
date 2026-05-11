@@ -4,9 +4,9 @@ import Script from 'next/script';
 import { getSiteUrl, siteConfig } from '@/lib/site';
 
 const route = '/herramientas-para-freelancers';
-const title = 'Herramientas para freelancers y autonomos digitales';
+const title = 'Herramientas para freelancers';
 const description =
-  'Seleccion practica de herramientas y calculadoras para freelancers y autonomos: facturacion, presupuestos, cuotas mensuales, landing pages y recursos para decidir mejor.';
+  'Calculadoras y recursos para fijar precios, presupuestar, facturar y elegir herramientas freelance con mas criterio.';
 
 const faqItems = [
   {
