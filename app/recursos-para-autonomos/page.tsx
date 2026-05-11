@@ -4,9 +4,9 @@ import Script from 'next/script';
 import { getSiteUrl, siteConfig } from '@/lib/site';
 
 const route = '/recursos-para-autonomos';
-const title = 'Recursos para autonomos que venden servicios digitales';
+const title = 'Recursos para autonomos';
 const description =
-  'Guia practica con calculadoras y recursos para autonomos: cuanto facturar, programas de facturacion, presupuestos, cuotas recurrentes y herramientas para ordenar mejor el negocio.';
+  'Calculadoras y recursos para autonomos: facturacion, presupuestos, cuotas recurrentes y herramientas para ordenar mejor el negocio.';
 
 const faqItems = [
   {

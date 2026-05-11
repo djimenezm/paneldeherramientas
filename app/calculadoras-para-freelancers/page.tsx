@@ -5,9 +5,9 @@ import { getSiteUrl, siteConfig } from '@/lib/site';
 import { pricingWorkflow, tools } from '@/lib/tools';
 
 const route = '/calculadoras-para-freelancers';
-const title = 'Calculadoras para freelancers: precios, facturacion y presupuestos';
+const title = 'Calculadoras para freelancers';
 const description =
-  'Guia practica para elegir calculadoras para freelancers: cuanto facturar, cuanto presupuestar, precio de landing pages y cuotas de mantenimiento web mensual.';
+  'Calculadoras para freelancers: cuanto facturar, cuanto presupuestar, precio de landing pages y cuotas de mantenimiento web.';
 
 const faqItems = [
   {

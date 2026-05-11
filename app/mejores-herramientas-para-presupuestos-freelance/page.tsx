@@ -4,9 +4,9 @@ import Script from 'next/script';
 import { getSiteUrl, siteConfig } from '@/lib/site';
 
 const route = '/mejores-herramientas-para-presupuestos-freelance';
-const title = 'Mejores herramientas para presupuestos freelance';
+const title = 'Herramientas para presupuestos';
 const description =
-  'Guia practica para elegir herramientas de presupuestos freelance: calculadoras, plantillas, propuestas comerciales y software para convertir mejor tus precios en ofertas defendibles.';
+  'Herramientas de presupuestos freelance: calculadoras, plantillas y recursos para convertir precios en ofertas defendibles.';
 
 const faqItems = [
   {

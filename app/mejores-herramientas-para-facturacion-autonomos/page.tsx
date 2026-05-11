@@ -4,9 +4,9 @@ import Script from 'next/script';
 import { getSiteUrl, siteConfig } from '@/lib/site';
 
 const route = '/mejores-herramientas-para-facturacion-autonomos';
-const title = 'Mejores herramientas para facturacion de autonomos';
+const title = 'Facturacion para autonomos';
 const description =
-  'Guia practica para elegir herramientas de facturacion para autonomos: calculadoras de facturacion objetivo, programas para emitir facturas, recursos para IRPF e IVA y criterios para ordenar mejor la operativa.';
+  'Herramientas de facturacion para autonomos: calculadoras, programas de facturas y recursos para ordenar mejor la operativa.';
 
 const faqItems = [
   {

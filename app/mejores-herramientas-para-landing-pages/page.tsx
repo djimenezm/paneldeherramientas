@@ -4,9 +4,9 @@ import Script from 'next/script';
 import { getSiteUrl, siteConfig } from '@/lib/site';
 
 const route = '/mejores-herramientas-para-landing-pages';
-const title = 'Mejores herramientas para landing pages';
+const title = 'Herramientas para landing pages';
 const description =
-  'Guia practica para elegir herramientas y recursos para landing pages: calculadoras de precio, plantillas de propuesta, checklists y recursos para presupuestar mejor una landing como proyecto cerrado.';
+  'Herramientas para landing pages: calculadoras de precio, plantillas, checklists y recursos para presupuestar mejor.';
 
 const faqItems = [
   {

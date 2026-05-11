@@ -5,7 +5,7 @@ import { getSiteUrl, siteConfig } from '@/lib/site';
 import { pricingWorkflow, tools } from '@/lib/tools';
 
 const route = '/precios-freelance';
-const title = 'Precios freelance: como calcular tarifas, presupuestos y cuotas';
+const title = 'Precios freelance';
 const description =
   'Guia practica para calcular precios freelance: tarifa por hora, facturacion mensual, presupuestos cerrados, landing pages y cuotas de mantenimiento web.';
 

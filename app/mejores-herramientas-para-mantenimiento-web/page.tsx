@@ -4,9 +4,9 @@ import Script from 'next/script';
 import { getSiteUrl, siteConfig } from '@/lib/site';
 
 const route = '/mejores-herramientas-para-mantenimiento-web';
-const title = 'Mejores herramientas para mantenimiento web';
+const title = 'Herramientas mantenimiento web';
 const description =
-  'Guia practica para elegir herramientas de mantenimiento web: calculadoras de cuota, checklists, soporte recurrente y recursos para definir mejor que incluye tu servicio mensual.';
+  'Herramientas de mantenimiento web: calculadoras de cuota, checklists y recursos para definir mejor tu servicio mensual.';
 
 const faqItems = [
   {
