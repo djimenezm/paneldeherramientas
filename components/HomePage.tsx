@@ -105,6 +105,12 @@ export default function HomePage() {
               <a href="/calculadoras-para-freelancers" className="tool-link">
                 Ver calculadoras para freelancers
               </a>
+              <a href="/herramientas-para-freelancers" className="tool-link">
+                Ver herramientas para freelancers
+              </a>
+              <a href="/recursos-para-autonomos" className="tool-link">
+                Ver recursos para autonomos
+              </a>
               <a href="/mejores-herramientas-para-facturacion-autonomos" className="tool-link">
                 Empezar por facturación
               </a>
